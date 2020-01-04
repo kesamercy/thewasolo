@@ -1,0 +1,11 @@
+- have the provison where the doctor is able to upadte their questions
+
+- design a form that updates the questions in the DB with the file path
+
+
+
+to do next:
+- make ajax call to change the page 
+- work on page to select the questions
+- design databse based on the new description
+- work on functionality to listen to a user's response and promot them for particular response 

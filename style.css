@@ -1,0 +1,190 @@
+:root {
+    --teal: #008080;
+}
+
+body {
+    background-color: white;
+}
+
+.main_container {
+    margin: 30px;
+}
+
+.logo {
+    font-family: 'Righteous', cursive;
+}
+
+.menu_welcomePage {
+    font-family: 'Alatsi', sans-serif;
+    float: right;
+}
+
+hr {
+    border-color: black;
+}
+
+ul li {
+    display: inline;
+    padding: 50px;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+.welcomePage_title_container {
+    width: 40%;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.page_title {
+    font-family: 'Anton', sans-serif;
+    font-size: 65px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 5px;
+    text-decoration: underline;
+    text-decoration-color: #008080;
+}
+
+.welcomePage_button {
+    background-color: #008080;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.welcomePage_button_container {
+    text-align: center;
+}
+
+.content {}
+
+.updateQstns_modal {
+    margin: auto;
+    background-color: var(--teal);
+    text-align: center;
+    padding: 50px;
+    position: relative;
+    top: 150px;
+    height: 540px;
+    width: 30%;
+    border-radius: 20px;
+    color: white;
+    font-family: 'Alatsi', sans-serif;
+}
+
+.updateQstns_title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+input[type=text] {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000000;
+    border-color: white;
+}
+
+input[type=submit] {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+input[type="file"] {
+    background-color: black;
+}
+
+.selectLanguageTitle {
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.listOFlanguages {
+    margin: auto;
+    width: 40%;
+    height: 400px;
+    font-family: 'Alatsi', sans-serif;
+    column-count: 2;
+}
+
+
+/* styling for the select language check boxes */
+
+.option-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    position: relative;
+    top: 13.33333px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 40px;
+    width: 40px;
+    transition: all 0.15s ease-out 0s;
+    background: #cbd1d8;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 0.5rem;
+    outline: none;
+    position: relative;
+    z-index: 1000;
+}
+
+.option-input:hover {
+    background: #9faab7;
+}
+
+.option-input:checked {
+    background: var(--teal);
+}
+
+.option-input:checked::before {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    content: '✔';
+    display: inline-block;
+    font-size: 26.66667px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.option-input:checked::after {
+    -webkit-animation: click-wave 0.65s;
+    -moz-animation: click-wave 0.65s;
+    animation: click-wave 0.65s;
+    background: #40e0d0;
+    content: '';
+    display: block;
+    position: relative;
+    z-index: 100;
+}
+
+.option-input.radio {
+    border-radius: 50%;
+}
+
+.option-input.radio::after {
+    border-radius: 50%;
+}
+
+.lang_label {
+    display: block;
+    line-height: 40px;
+}
