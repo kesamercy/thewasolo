@@ -1,5 +1,4 @@
 function loadPage(suburl, data, callback, postcallback) {
-    debugger
     $.ajax({
         url: suburl,
         type: "GET",
@@ -8,7 +7,7 @@ function loadPage(suburl, data, callback, postcallback) {
             if (callback) {
                 callback(maindta);
             } else {
-                document.getElementById("content").innerHTML = maindta;
+                document.getElementById("pageDetails").innerHTML = maindta;
                 if (postcallback) {
                     postcallback();
                 }
