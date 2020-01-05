@@ -48,7 +48,8 @@ ul li a {
     text-decoration-color: #008080;
 }
 
-.welcomePage_button {
+.welcomePage_button,
+.next_button {
     background-color: #008080;
     border: none;
     color: white;
@@ -71,7 +72,6 @@ ul li a {
     text-align: center;
     padding: 50px;
     position: relative;
-    top: 150px;
     height: 540px;
     width: 30%;
     border-radius: 20px;
@@ -81,7 +81,6 @@ ul li a {
 
 .updateQstns_title {
     font-size: 20px;
-    font-weight: bold;
 }
 
 input[type=text] {
@@ -107,15 +106,40 @@ input[type="file"] {
 
 .selectLanguageTitle {
     font-size: 30px;
-    margin-top: 20px;
+    margin: auto;
 }
 
-.listOFlanguages {
+.listOFlanguages,
+.categories {
     margin: auto;
     width: 40%;
     height: 400px;
     font-family: 'Alatsi', sans-serif;
     column-count: 2;
+}
+
+.categoryTitle {
+    font-size: 30px;
+}
+
+.category_subtitle {
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 5px;
+    text-decoration: none;
+}
+
+.categories {
+    column-count: 3;
+    padding: 30px;
+    width: 80%;
+}
+
+audio {
+    height: 35px;
+    width: 150px;
+    text-align: center;
 }
 
 
