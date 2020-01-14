@@ -216,8 +216,7 @@ audio {
 
 /* response form styling */
 
-input[type=text],
-select {
+input[type=patientResponse] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -227,7 +226,7 @@ select {
     box-sizing: border-box;
 }
 
-input[type=submit] {
+input[id=responseFormSubmitButton] {
     width: 100%;
     background-color: #4CAF50;
     color: white;
@@ -238,7 +237,7 @@ input[type=submit] {
     cursor: pointer;
 }
 
-input[type=submit]:hover {
+input[id=responseFormSubmitButton]:hover {
     background-color: #45a049;
 }
 
@@ -246,4 +245,6 @@ input[type=submit]:hover {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
+    width: 50%;
+    margin: auto;
 }

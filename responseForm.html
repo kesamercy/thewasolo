@@ -19,22 +19,21 @@
 
         <h1 class="categoryTitle page_title">Patient Responses based on questions</h1>
 
-        <div class="responseForm">
+        <div class=responseForm>
             <form action="/action_page.php">
-                <label for="fname">Persoanl Info</label>
-                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <label for="fname">First Name</label>
+                <input type="patientResponse" id="fname" name="firstname" placeholder="Your name..">
 
                 <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                <input type="patientResponse" id="lname" name="lastname" placeholder="Your last name..">
 
-                <label for="country">Country</label>
-                <select id="country" name="country">
-                <option value="australia">Australia</option>
-                <option value="canada">Canada</option>
-                <option value="usa">USA</option>
-              </select>
+                <label for="lname">Did you choke on a bone?</label>
+                <input type="patientResponse" id="lname" name="lastname" placeholder="Yes or no..">
 
-                <input type="submit" value="Submit">
+                <label for="lname">Did you vacciante?</label>
+                <input type="patientResponse" id="lname" name="lastname" placeholder="This is not a political question..">
+
+                <input id="responseFormSubmitButton" type="submit" value="Submit">
             </form>
         </div>
 
