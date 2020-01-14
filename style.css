@@ -228,7 +228,7 @@ input[type=patientResponse] {
 
 input[id=responseFormSubmitButton] {
     width: 100%;
-    background-color: #4CAF50;
+    background-color: var(--teal);
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
