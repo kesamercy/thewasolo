@@ -6,67 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>The Wasolo</title>
     <link rel="stylesheet" type="text/css" href="css/demo.css" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
+
     <script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Category</title>
 </head>
 
 <body class="questions_container">
 
-    <div class="mainQuestion_category">
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Open Modal</button>
+    <div class="w3-container">
 
-        <h1 class="categoryTitle page_title">Choose questions from each category</h1>
+        <div id="id01" class="w3-modal">
+            <div class="w3-modal-content local-modal">
+                <div class="w3-container question-content">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                    <h3 class="page_title question-title">Question</h3>
+                    <p class="question">Do you have conora virus?</p>
 
-        <div class="categories">
-
-            <h2 class="category_subtitle page_title">Question 1</h2>
-
-            <audio controls>
-        
-                    <source src="mercytesting.mp3" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>
-
-            <p>when the question is done, listen for the response</p>
-
-            <!-- attempt the speech recognition part tomorrow. once this done, then the whole logic is complete -->
+                    <div class="round-button modal-nav-div">
+                        <div class="round-button-circle modal-nav-buttons"><a onclick="loadModal()" href="javascript:loadPage('./questionCategory.html')" class="round-button">ask</a></div>
+                        <div class="round-button-circle modal-nav-buttons"><a onclick="loadModal()" href="javascript:loadPage('./questionCategory.html')" class="round-button">skip</a></div>
+                        <div class="round-button-circle modal-nav-buttons"><a onclick="loadModal()" href="javascript:loadPage('./questionCategory.html')" class="round-button">next category</a></div>
+                    </div>
 
 
-            <h2 class="category_subtitle page_title">category 2</h2>
-            <audio controls>
-        
-                <source src="mercytesting.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-            <h2 class="category_subtitle page_title">category 3</h2>
-            <audio controls>
-        
-                <source src="mercytesting.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-            <h2 class="category_subtitle page_title">category 4</h2>
-            <audio controls>
-        
-                <source src="mercytesting.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-            <h2 class="category_subtitle page_title">category 5</h2>
-            <audio controls>
-        
-                <source src="mercytesting.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-            <h2 class="category_subtitle page_title">category 6</h2>
-            <audio controls>
-        
-                <source src="mercytesting.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
+                </div>
+            </div>
         </div>
     </div>
-
 
     <div class="welcomePage_button_container">
 
@@ -84,7 +54,9 @@
     <script>
         $(document).ready(function() {
 
-
+            // $("a").click(function() {
+            //     $("p").toggle();
+            // });
 
         });
     </script>

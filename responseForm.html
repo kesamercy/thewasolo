@@ -10,7 +10,7 @@
     <script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <title>Response Form</title>
+    <title> Patient Response Form</title>
 </head>
 
 <body class="language_container">
@@ -21,18 +21,21 @@
         <br><br>
         <div class=responseForm>
             <form action="/action_page.php">
-                <label for="fname">First Name</label>
-                <input type="patientResponse" id="fname" name="firstname" placeholder="Your name..">
-
-                <label for="lname">Last Name</label>
-                <input type="patientResponse" id="lname" name="lastname" placeholder="Your last name..">
-
-                <label for="lname">Did you choke on a bone?</label>
-                <input type="patientResponse" id="lname" name="lastname" placeholder="Yes or no..">
-
-                <label for="lname">Did you vacciante?</label>
-                <input type="patientResponse" id="lname" name="lastname" placeholder="This is not a political question..">
-
+                <label for="responseFormat_number">First Response</label>
+                <input type="number" id="responseFormat_number">
+                <br> <br>
+                <label for="responseFormat_slideBar">Second Response</label>
+                <input type="range" id="responseFormat_slideBar">
+                <br> <br>
+                <label for="responseFormat_Images">Third Response</label>
+                <input type="image" id="responseFormat_Images">
+                <br> <br>
+                <label for="responseFormat_bodyInteraction">Fourth Response</label>
+                <input type="number" id="responseFormat_bodyInteraction">
+                <br><br>
+                <label for="responseFormat_time">fifth Response</label>
+                <input type="time" id="responseFormat_bodyInteraction">
+                <br><br>
                 <input id="responseFormSubmitButton" type="submit" value="Submit">
             </form>
         </div>

@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Alatsi|Anton|Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Shadows+Into+Light" />
     <title>Welcome</title>
 </head>
 
@@ -30,38 +31,39 @@
         </div>
 
         <div class="logo">
-            <h2 class="logo">the wasolo</h2>
+            <h2 class="logo"> <a href="./index.html">thewasolo</a> </h2>
         </div>
 
     </div>
-    <hr>
 
-    <div id="pageDetails">
+    <div class="welcomePage" id="pageDetails">
         <div class="welcomePage_title_container">
-            <h1 class="page_title">Translation tool for Bang Bang hospital</h1>
+            <h1 class="page_title">Hospital Translation Tool</h1>
+            <br>
+            <p class="slogan">We help translate the needs of your patients.</p>
 
-            <p> If you are a health worker with a patient that speaks a language you don't understand, use this application to help you communicate with your patient about their immediate medical needs.</p>
-
-            <div class="welcomePage_button_container">
-                <a class="next_button" href="javascript:loadPage('./doctorLanguage.html')">  Begin </a>
-
+            <hr>
+            <br><br>
+            <div class="round-button">
+                <div class="round-button-circle"><a onclick="changeColor('#334d50', '#ffffff')" href="javascript:loadPage('./patientLanguage.html')" class="round-button">Begin</a></div>
             </div>
 
         </div>
 
+        <div class="time">
+            <div class="day" id="day"></div>
+            <div id='clock'></div>
+        </div>
+
 
     </div>
-
-
-
-
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="index.js"></script>
     <script>
         $(document).ready(function() {
 
-
+            displayTime();
+            setInterval(displayTime, 1000);
 
         });
     </script>
