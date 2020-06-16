@@ -11,36 +11,22 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <title>Patient Answers</title>
+    <title>Category</title>
 </head>
 
-<body class="answers-container">
+<body class="questions_container">
 
-    <div class="answers">
-        <div class="answer-One">
+    <p>ask the questions based on the ROS category</p>
+    <p>for each category, change the expected response form on the patient page.</p>
 
-            <div class="triangle-up"></div>
-            <div class="circle"></div>
-        </div>
+    <p>show the answer from the patient </p>
 
-        <div class="answer-two">
-            <a class="next_button" href="./Human-Body-Rendering-HTML/index.html"> body </a>
-        </div>
-
-        <div class="answer-three">
-            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-        </div>
-    </div>
+    <p>at the end of the interivew, generate the patient response form and send it to the doctor.</p>
+    
+    <a href="responseForm.php">end interview</a>
 
 
 
-
-
-    <div class="welcomePage_button_container">
-
-        <a class="next_button" href="javascript:loadPage('./pat-lang.html')"> back </a>
-        <a class="next_button" href="javascript:loadPage('./responseForm.html')"> next </a>
-    </div>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

@@ -44,9 +44,9 @@
 
             <hr>
             <br><br>
-            <div class="round-button">
-                <div class="round-button-circle"><a onclick="changeColor('#334d50', '#ffffff')" href="javascript:loadPage('./patientLanguage.html')" class="round-button">Begin</a></div>
-            </div>
+
+            <a href="pat-lang.php">next</a>
+            
 
         </div>
 

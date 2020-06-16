@@ -46,17 +46,7 @@
         </label>
     </div>
 
-
-    <div class="welcomePage_button_container">
-        <div class="round-button">
-            <div class="round-button-circle"><a onclick="loadModal()" href="javascript:loadPage('./questionCategory.html')" class="round-button">Start Interview</a></div>
-        </div>
-        <br>
-        <a href="./index.html"><i class="arrow left"></i></a>
-
-    </div>
-
-
+    <a href="body-exam.php">begin interview</a>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/index.js"></script>
