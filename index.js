@@ -9,7 +9,12 @@ window.onload = function () {
                 console.log(selection);
             }
             
-            if (t.target.parentElement.getAttribute('data-position') != null) document.getElementById('data').innerHTML = t.target.parentElement.getAttribute('data-position');
+            if (t.target.parentElement.getAttribute('data-position') != null){
+
+                document.getElementById('data').innerHTML = t.target.parentElement.getAttribute('data-position');
+                var selection = t.target.parentElement.getAttribute('data-position');
+                console.log(selection);
+            }
 
             
         }
