@@ -64,6 +64,14 @@ if (count($_POST) > 0) {
     </div>
     <!--// Data Showing -->
 
+    <?php
+
+    $pain_points = $_POST['pain_points'];
+
+    print_r(current($pain_points));
+
+    ?>
+
 
     <a href="ros-questions.php"> Follow up questions</a>
 
