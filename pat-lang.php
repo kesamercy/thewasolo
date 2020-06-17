@@ -78,9 +78,6 @@ if (count($_POST) > 0) {
     ?>
 
     </div>
-
-    <a href="body-exam.php">begin interview</a>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/index.js"></script>
     <script>
