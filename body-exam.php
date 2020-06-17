@@ -68,6 +68,8 @@ if (count($_POST) > 0) {
 
     $pain_points = $_POST['pain_points'];
 
+    echo "empty for now";
+
     echo (current($pain_points));
 
     ?>
