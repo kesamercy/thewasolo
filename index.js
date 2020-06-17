@@ -22,15 +22,17 @@ window.onload = function () {
                 
             }
 
+            $.ajax({ 
+                type: "POST", 
+                url: "body-exam.php", 
+                data: { pain_points : selection}, 
+                success: function() { 
+                       alert("Success"); 
+                 } 
+         }); 
+
             
         }
     }
-    $.ajax({ 
-        type: "POST", 
-        url: "body-exam.php", 
-        data: { pain_points : selection}, 
-        success: function() { 
-               alert("Success"); 
-         } 
- }); 
+    
 }

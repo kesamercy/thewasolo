@@ -70,10 +70,10 @@ if (count($_POST) > 0) {
 
     echo "empty for now";
 
-    echo (current($pain_points));
+    echo ($pain_points);
 
     ?>
-
+<br><br><br>
 
     <a href="ros-questions.php"> Follow up questions</a>
 
