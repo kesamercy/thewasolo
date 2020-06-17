@@ -20,20 +20,22 @@ window.onload = function () {
                 var current = t.target.parentElement.getAttribute('data-position');
                 selection.push(current);
                 
+                $.ajax({ 
+                    method: "POST", 
+                    url: "body-exam.php", 
+                    data: { "pain_points" : selection}, 
+                    success: function() { 
+                           alert("Success"); 
+                     } 
+             }); 
+                
             }
 
             
             
         }
     }
-    $.ajax({ 
-        method: "POST", 
-        url: "body-exam.php", 
-        data: { "pain_points" : selection}, 
-        success: function() { 
-               alert("Success"); 
-         } 
- }); 
+    
 
     
 }
