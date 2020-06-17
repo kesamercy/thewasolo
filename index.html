@@ -1,28 +1,3 @@
-<?php
-session_start();
-include_once "access-db.php";
-
-// if(!isset($_SESSION["user_id"])){ //if login in session is not set
-//     header("location:farmer-login.php");
-// }
-
-$sql = "SELECT language_type FROM translator_language";
-$result = $conn->query($sql);
-
-if (count($_POST) > 0) {
-    //get the user id
-    // $user_id = $_GET['user_id'];
-
-    //get the language type and save it into the session
-    $_SESSION['language'] =  $_POST['lang_type'];
-
-    //route to the body exam page
-    header("location:body-exam.php?"); 
-
-
-}
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -63,9 +38,6 @@ if (count($_POST) > 0) {
         Area: <span id="data"></span>
     </div>
     <!--// Data Showing -->
-
-
-    <a href="ros-questions.php"> Follow up questions</a>
 
 </body>
 </html>

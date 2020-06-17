@@ -1,3 +1,28 @@
+<?php
+session_start();
+include_once "access-db.php";
+
+// if(!isset($_SESSION["user_id"])){ //if login in session is not set
+//     header("location:farmer-login.php");
+// }
+
+$sql = "SELECT language_type FROM translator_language";
+$result = $conn->query($sql);
+
+if (count($_POST) > 0) {
+    //get the user id
+    // $user_id = $_GET['user_id'];
+
+    //get the language type and save it into the session
+    $_SESSION['language'] =  $_POST['lang_type'];
+
+    //route to the body exam page
+    header("location:body-exam.php?"); 
+
+
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,6 +41,45 @@
 <body class="language_container">
 
     <h1 class="selectLanguageTitle page_title"> Patient, Please Select Your langauge </h1>
+
+    <!-- populate the form with a list of languages from the db -->
+    <!-- the user should submit the form with the lsit of languages from the db -->
+    <!-- each language should be it's own form -->
+    <!-- based on the lang selected, the db for that lang should be accessed for the questions to be asked. so save the selection to the seeions -->
+
+    <div class="page-content"> 
+
+    <h1> Farmer's Inventory </h1>
+
+    <h1>enter the quantity for the foods you wish to add</h1>
+    <?php
+
+    if ($result->num_rows > 0) {
+        
+        echo "<table class='prodcue-table'><tr style='height: 80px'><th style='text-align:left'> Language </th></tr><br><br>";
+
+        // output data of each row
+        while ($row = mysqli_fetch_array($result)) {
+            echo "<form method='post' action=''>";
+            $lang_type = $row["language_type"];
+            echo "<tr style='height: 40px'>
+                        <td>" . $lang_type . "</td>
+                        // you need this as a hidden feature so that you can return the selected language when the form is submitted.
+                        <input name='lang_type'  type='hidden' value='$lang_type' >
+                        <td> <input type='submit' value='select'></td>
+                    </tr>";
+                    echo "</form>";
+        }
+        echo "</table>";
+
+        
+
+    } else {
+        echo "0 results";
+    }
+    ?>
+
+    </div>
 
 
     <div class="listOFlanguages">
