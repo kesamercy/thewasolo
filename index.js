@@ -9,9 +9,8 @@ window.onload = function () {
 
                 document.getElementById('data').innerHTML = t.target.getAttribute('data-position');
                 var current = t.target.getAttribute('data-position');
-                
                 selection.push(current);
-                console.log(selection);
+                
                 
             }
             
