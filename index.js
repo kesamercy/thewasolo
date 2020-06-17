@@ -27,9 +27,9 @@ window.onload = function () {
         }
     }
     $.ajax({ 
-        type: "POST", 
+        method: "POST", 
         url: "body-exam.php", 
-        data: { pain_points : selection}, 
+        data: { "pain_points" : selection}, 
         success: function() { 
                alert("Success"); 
          } 
