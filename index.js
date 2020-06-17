@@ -10,6 +10,9 @@ window.onload = function () {
                 document.getElementById('data').innerHTML = t.target.getAttribute('data-position');
                 var current = t.target.getAttribute('data-position');
                 selection.push(current);
+
+                document.cookie = "pain_point=selection; expires=Fri, 03 Aug 2018 12:00:00 UTC; path=/";
+                // document.cookie=selection;
                 
                 
             }
@@ -19,15 +22,6 @@ window.onload = function () {
                 document.getElementById('data').innerHTML = t.target.parentElement.getAttribute('data-position');
                 var current = t.target.parentElement.getAttribute('data-position');
                 selection.push(current);
-                
-                $.ajax({ 
-                    method: "POST", 
-                    url: "body-exam.php", 
-                    data: { "pain_points" : selection}, 
-                    success: function() { 
-                           alert("Success"); 
-                     } 
-             }); 
                 
             }
 

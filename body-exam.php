@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 include_once "access-db.php";
 
 // if(!isset($_SESSION["user_id"])){ //if login in session is not set
@@ -66,11 +67,21 @@ if (count($_POST) > 0) {
 
     <?php
 
-    $pain_points = $_POST['pain_points'];
-
     echo "empty for now";
 
-    echo ($pain_points);
+    setcookie('pain_point', 'selection', (time() + (3600*2)), '/');
+
+
+    if(isset($_COOKIE['pain_point'])) {
+    
+        echo $_COOKIE['pain_point'];
+
+    } 
+
+    
+
+    
+    
 
     ?>
 <br><br><br>
