@@ -47,11 +47,9 @@ if (count($_POST) > 0) {
     <!-- each language should be it's own form -->
     <!-- based on the lang selected, the db for that lang should be accessed for the questions to be asked. so save the selection to the seeions -->
 
+    <!-- // you need this as a hidden feature in the form so that you can return the selected language when the form is submitted. -->
+
     <div class="page-content"> 
-
-    <h1> Farmer's Inventory </h1>
-
-    <h1>enter the quantity for the foods you wish to add</h1>
     <?php
 
     if ($result->num_rows > 0) {
@@ -64,7 +62,7 @@ if (count($_POST) > 0) {
             $lang_type = $row["language_type"];
             echo "<tr style='height: 40px'>
                         <td>" . $lang_type . "</td>
-                        // you need this as a hidden feature so that you can return the selected language when the form is submitted.
+                        
                         <input name='lang_type'  type='hidden' value='$lang_type' >
                         <td> <input type='submit' value='select'></td>
                     </tr>";
@@ -79,35 +77,6 @@ if (count($_POST) > 0) {
     }
     ?>
 
-    </div>
-
-
-    <div class="listOFlanguages">
-        <label class="lang_label">
-            <input type="checkbox" class="option-input checkbox" checked />
-            Swahili
-        </label>
-        <label class="lang_label">
-            <input type="checkbox" class="option-input checkbox" checked />
-            Luganda
-        </label>
-        <label class="lang_label">
-            <input type="checkbox" class="option-input checkbox" checked />
-            Lugisu
-        </label>
-
-        <label class="lang_label">
-            <input type="checkbox" class="option-input checkbox" checked />
-            Lunyoro
-        </label>
-        <label class="lang_label">
-            <input type="checkbox" class="option-input checkbox" checked />
-            Lugbara
-        </label>
-        <label class="lang_label">
-            <input type="checkbox" class="option-input checkbox" checked />
-            Lutoro
-        </label>
     </div>
 
     <a href="body-exam.php">begin interview</a>
