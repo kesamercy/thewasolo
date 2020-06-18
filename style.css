@@ -12,13 +12,7 @@ body {
     padding: 20px;
 }
 
-.start-interview-btn {
-    display:block;
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    background-color: rgba(0,0,0,.3);
-}
+
 
 .logo a {
     font-family: "Righteous", cursive;
@@ -49,7 +43,15 @@ ul li a:hover {
 
 
 /* styling for the welcome page */
-  .banner-welcome #right, .banner-welcome #left  {
+.start-interview-btn {
+    display:block;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,.3);
+}
+
+  .content #right, .content #left  {
     width: 50%;
     text-align: center;
   }
@@ -59,6 +61,10 @@ ul li a:hover {
     display: inline-block;
     text-align: left;
     margin-top: 350px;
+  }
+
+  .banner-title h1 {
+      font-size: 50px;
   }
 
 /* styling for the split page for login and sign up*/

@@ -46,8 +46,6 @@ include_once "access-db.php";
     <div id="content">
         <div id="left">
             <div class="slogan">
-
-
                 <div class="banner-title">
                     <h1>We are Committed to Helping you Understand your Patient's Needs.</h1>
                 </div>
@@ -66,6 +64,7 @@ include_once "access-db.php";
 
         </div>
     </div>
+    <br><br><br><br><br><br><br><br>
 
 
     <div class="footer">
