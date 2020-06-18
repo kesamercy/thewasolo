@@ -61,6 +61,8 @@ if (count($_POST) > 0) {
             echo "<form method='post' action=''>";
             $lang_type = $row["language_type"];
             $lang_id = $row["id"];
+            echo 'this is the language id', $lang_id;
+
             echo "<tr style='height: 40px'>
                         <td>" . $lang_type . "</td>
                         
