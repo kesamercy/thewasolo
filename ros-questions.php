@@ -15,7 +15,7 @@ if (count($_POST) > 0) {
     $lang_id = $_SESSION['language'];
     $category_id = $_POST['category'];
 
-    echo $lang_id;
+    echo 'this is the lang id', $lang_id;
     echo $category_id;
 
     // this is the code responsible to show the questions for the chosen category 
