@@ -46,6 +46,13 @@ ul li a:hover {
     text-decoration: underline;
 }
 
+
+/* styling for the welcome page */
+  .banner-welcome #right, .banner-welcome #left  {
+    width: 50%;
+    text-align: center;
+  }
+
 .welcomePage_title_container {
     width: 40%;
     margin: auto;
