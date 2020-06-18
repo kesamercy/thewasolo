@@ -53,7 +53,13 @@ ul li a:hover {
     text-align: center;
   }
 
-  /* styling for the split page for login and sign up*/
+  .banner-title {
+    width: 50%;
+    display: inline-block;
+    text-align: left;
+  }
+
+/* styling for the split page for login and sign up*/
 #content {
     display: flex;
   }

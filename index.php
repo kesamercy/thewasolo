@@ -46,7 +46,7 @@ include_once "access-db.php";
             <div class="slogan">
 
 
-                <div class="banner-title before-login">
+                <div class="banner-title">
                     <h1>We are Committed to Helping you Understand your Patient's Needs.</h1>
                 </div>
 
