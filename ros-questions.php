@@ -6,7 +6,7 @@ include_once "access-db.php";
 //     header("location:farmer-login.php");
 // }
 
-$query = "SELECT cat_name FROM translator_qtncategory";
+$query = "SELECT * FROM translator_qtncategory";
 $query_results = $conn->query($query);
 
 
@@ -96,7 +96,7 @@ if (count($_POST) > 0) {
                 echo "<form method='post' action=''>";
                 $category = $row["cat_name"];
                 $category_id = $row["id"];
-                echo 'this is the id', $category_id;
+                echo 'this is the id ', $category_id;
 
                 echo "<tr style='height: 40px'>
                             <td>" . $category . "</td>
