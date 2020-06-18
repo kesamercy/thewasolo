@@ -58,7 +58,7 @@ if (count($_POST) > 0) {
         }
 
     } else {
-        echo "0 results";
+        echo "0 results for the questions based on the language and the category";
     }
 
 }
@@ -81,12 +81,13 @@ if (count($_POST) > 0) {
 
 <body class="questions_container">
 
-    <p>ask the questions based on the ROS category</p>
+    <p>Please select the body category for the questions you would like to ask the patient </p>
     <!-- get all the questions from the chosen category and show them-->
+    <!-- you need the type as a hidden in the form so that you can return the selected category when the form is submitted.-->
     <?php
 
         if ($query_results->num_rows > 0) {
-            echo "<table class='prodcue-table'><tr style='height: 80px'><th style='text-align:left'> Language </th></tr><br><br>";
+            echo "<table class='prodcue-table'><tr style='height: 80px'><th style='text-align:left'> category </th></tr><br><br>";
 
             // output data of each row
             while ($row = mysqli_fetch_array($query_results)) {
@@ -96,7 +97,7 @@ if (count($_POST) > 0) {
 
                 echo "<tr style='height: 40px'>
                             <td>" . $category . "</td>
-                            // you need this as a hidden feature so that you can return the selected category when the form is submitted.
+                            
                             <input name='category'  type='hidden' value='$category_id' >
                             <td> <input type='submit' value='select'></td>
                         </tr>";
