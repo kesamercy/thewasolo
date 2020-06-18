@@ -57,7 +57,7 @@ include_once "access-db.php";
         <div id="right">
             <div class="welcomepage-card">
             
-            <img src="patient.svg" alt="">
+            <img height="200" width="200" src="patient.svg" alt="">
             <a class="start-interview-btn" href="pat-lang.php"> Start Interview</a>
                 
             </div>
