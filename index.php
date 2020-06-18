@@ -69,7 +69,7 @@ include_once "access-db.php";
 
     <div class="footer">
         Icons made by <a href="https://www.flaticon.com/free-icon/information_2764540" title="monkik">monkik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
-
+            <a href="https://vectorified.com/medical-background-vector">Medical Background Vector</a>
     </div>
 
 

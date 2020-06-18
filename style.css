@@ -56,8 +56,14 @@ ul li a:hover {
     text-align: center;
   }
 
+  .banner-welcome #right {
+    background-repeat: no-repeat;
+    background: linear-gradient(rgba(20, 20, 20, 0.8), rgba(20, 20, 20, 0.8)),
+      url(medical-background-vector-22.jpg);
+    background-size: cover;
+  }
+
   .banner-title {
-    width: 70%;
     display: inline-block;
     text-align: left;
     margin-top: 350px;
