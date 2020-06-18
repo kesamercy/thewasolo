@@ -47,7 +47,7 @@ include_once "access-db.php";
 
 
                 <div class="banner-title before-login">
-                    <h1>We are committed to helping you understand your patient's needs.</h1>
+                    <h1>We are Committed to Helping you Understand your Patient's Needs.</h1>
                 </div>
 
             </div>
@@ -58,7 +58,7 @@ include_once "access-db.php";
             <div class="welcomepage-card">
             
             <img src="patient.svg" alt="">
-            <a class="start-interview-btn" href="#"> Start Interview</a>
+            <a class="start-interview-btn" href="pat-lang.php"> Start Interview</a>
                 
             </div>
 
@@ -66,30 +66,15 @@ include_once "access-db.php";
     </div>
 
 
-    <div class="welcomePage" id="pageDetails">
-        <div class="welcomePage_title_container">
-            <h1 class="page_title">Hospital Translation Tool</h1>
-            <br>
-            <p class="slogan">We help translate the needs of your patients.</p>
-
-            <hr>
-            <br><br>
-
-            <a href="pat-lang.php">next</a>
-            
-
-        </div>
-
-        <div class="time">
-            <div class="day" id="day"></div>
-            <div id='clock'></div>
-        </div>
-
-
+    <div class="footer">
         Icons made by <a href="https://www.flaticon.com/free-icon/information_2764540" title="monkik">monkik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
 
-
     </div>
+
+
+
+        
+   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="index.js"></script>
     <script>
