@@ -14,8 +14,9 @@ if (count($_POST) > 0) {
 
     // $lang_id = $_SESSION['language'];
     $lang_id = 2;
-    $category_id = $_POST['category'];
+    // $category_id = $_POST['category'];
 
+    $category_id = 1;
     echo 'this is the lang id', $lang_id;
     echo 'the cateogry id', $category_id;
 
