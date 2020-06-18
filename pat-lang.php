@@ -14,7 +14,7 @@ if (count($_POST) > 0) {
     // $user_id = $_GET['user_id'];
 
     //get the language type and save it into the session
-    $_SESSION['language'] =  $_POST['lang_type'];
+    $_SESSION['language'] =  $_POST['lang_id'];
 
     //route to the body exam page
     header("location:body-exam.php?"); 
@@ -60,10 +60,11 @@ if (count($_POST) > 0) {
         while ($row = mysqli_fetch_array($result)) {
             echo "<form method='post' action=''>";
             $lang_type = $row["language_type"];
+            $lang_id = $row["id"];
             echo "<tr style='height: 40px'>
                         <td>" . $lang_type . "</td>
                         
-                        <input name='lang_type'  type='hidden' value='$lang_type' >
+                        <input name='lang_id'  type='hidden' value='$lang_id' >
                         <td> <input type='submit' value='select'></td>
                     </tr>";
                     echo "</form>";

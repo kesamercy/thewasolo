@@ -6,17 +6,17 @@ include_once "access-db.php";
 //     header("location:farmer-login.php");
 // }
 
-$query = "SELECT category FROM category_table";
+$query = "SELECT cat_name FROM translator_qtncategory";
 $query_results = $conn->query($query);
 
 
 if (count($_POST) > 0) {
 
-    $lang = $_SESSION['lang_type'];
-    $category = $_POST['category'];
+    $lang_id = $_SESSION['language'];
+    $category_id = $_POST['category'];
 
     // this is the code responsible to show the questions for the chosen category 
-    $sql = "SELECT * FROM translator_content WHERE lang='$lang' AND category='$category'";
+    $sql = "SELECT * FROM translator_content WHERE language_id='$lang_id' AND category_id='$category_id'";
     $result = $conn->query($sql);
 
     // <!-- select all the questions for the specified language and the category -->
@@ -27,11 +27,16 @@ if (count($_POST) > 0) {
 
             echo "<form method='post' action='response-form.php'>";
 
-            $eng_question = $row["question"];
+            $qtn_id = $row["question_id"];
+            $sql = "SELECT question FROM translator_questions WHERE id='$qtn_id'";
+            $result = $conn->query($sql);
+            $qtn = $row["question"];
+
             //     <!-- get the first qtn from the results and display the text in english -->
-            echo "<h1> ".$eng_question." </h1>";
+            echo "<h1> ".$qtn." </h1>";
 
             // <!-- get the file path for that qtn to retrive the audio and show t -->
+            $audio_path = $row["sourcefile"];
             echo "<img src='image.png' onclick='playAudio('mysound.mp3')'>";
 
             echo "<audio controls>
@@ -40,8 +45,10 @@ if (count($_POST) > 0) {
             Your browser does not support the audio element.
             </audio>";
 
-            // you need this as a hidden feature so that you can return the selected category when the form is submitted.
-            echo "<input name='question'  type='hidden' value='$eng_question' >";
+            // you need this as a hidden feature so that you can return the selected value when the form is submitted.
+            //you do not need to submit the question since the patient will listen to that via audio
+            //you need to submit the cateogy so that the correct response form is displayed for the patient to enter their answer
+            echo "<input name='category'  type='hidden' value='$category_id' >";
 
             // <!-- get response button to submit the question for the patient to respond selected qtn and submit the form-->
             echo "<input type='submit' name='response' value='get response'>";
@@ -54,32 +61,6 @@ if (count($_POST) > 0) {
         echo "0 results";
     }
 
-
-   
-    //get the food name
-    $food = $_POST['food_name'];
-
-    //get the food quantity
-    $quantity = $_POST['quantity'];
-    echo 'this is the food quantity ', $quantity;
-
-    //use the food name to get the food id from the food table
-    $query = "SELECT food_id FROM farm_food WHERE food_name='$food'";
-    $id_result = mysqli_query($conn, $query);
-
-    //update the stock table with the values of the food id, the stock qnautity and the userid of the farmer
-    if ($row = mysqli_fetch_assoc($id_result)) {
-        $food_id = $row['food_id'];
-
-        //store the user id in the userid col for the stock table
-        if (mysqli_query($conn, "SELECT filepath (user_id, food_id, stock_quantity) VALUES ('$user_id', '$food_id', '$quantity')")) {
-            echo 'your stock has been added to the inventory';
-
-        } else {
-            echo 'there was an error, your stock has not been added';
-        }
-
-    }
 }
 
 ?>
@@ -104,26 +85,28 @@ if (count($_POST) > 0) {
     <!-- get all the questions from the chosen category and show them-->
     <?php
 
-    if ($query_results->num_rows > 0) {
-        echo "<table class='prodcue-table'><tr style='height: 80px'><th style='text-align:left'> Language </th></tr><br><br>";
+        if ($query_results->num_rows > 0) {
+            echo "<table class='prodcue-table'><tr style='height: 80px'><th style='text-align:left'> Language </th></tr><br><br>";
 
-        // output data of each row
-        while ($row = mysqli_fetch_array($query_results)) {
-            echo "<form method='post' action=''>";
-            $category = $row["category_name"];
-            echo "<tr style='height: 40px'>
-                        <td>" . $category . "</td>
-                        // you need this as a hidden feature so that you can return the selected category when the form is submitted.
-                        <input name='category'  type='hidden' value='$category' >
-                        <td> <input type='submit' value='select'></td>
-                    </tr>";
-                    echo "</form>";
+            // output data of each row
+            while ($row = mysqli_fetch_array($query_results)) {
+                echo "<form method='post' action=''>";
+                $category = $row["cat_name"];
+                $category_id = $row["id"];
+
+                echo "<tr style='height: 40px'>
+                            <td>" . $category . "</td>
+                            // you need this as a hidden feature so that you can return the selected category when the form is submitted.
+                            <input name='category'  type='hidden' value='$category_id' >
+                            <td> <input type='submit' value='select'></td>
+                        </tr>";
+                        echo "</form>";
+            }
+            echo "</table>";
+
+        } else {
+            echo "0 results for the category table";
         }
-        echo "</table>";
-
-    } else {
-        echo "0 results";
-    }
     ?>
 
     <hr>
