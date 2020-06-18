@@ -6,7 +6,7 @@ include_once "access-db.php";
 //     header("location:farmer-login.php");
 // }
 
-$sql = "SELECT language_type FROM translator_language";
+$sql = "SELECT * FROM translator_language";
 $result = $conn->query($sql);
 
 if (count($_POST) > 0) {

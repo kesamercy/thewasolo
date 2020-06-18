@@ -96,8 +96,7 @@ if (count($_POST) > 0) {
                 echo "<form method='post' action=''>";
                 $category = $row["cat_name"];
                 $category_id = $row["id"];
-                echo 'this is the id ', $category_id;
-
+                
                 echo "<tr style='height: 40px'>
                             <td>" . $category . "</td>
                             
