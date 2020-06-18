@@ -9,6 +9,7 @@ body {
     background-color: var(--cream);
     color: var(--silverblack) ;
     font-family: 'Playfair Display', serif;
+    padding: 20px;
 }
 
 .start-interview-btn {
@@ -54,9 +55,10 @@ ul li a:hover {
   }
 
   .banner-title {
-    width: 50%;
+    width: 70%;
     display: inline-block;
     text-align: left;
+    margin-top: 350px;
   }
 
 /* styling for the split page for login and sign up*/
@@ -78,13 +80,7 @@ ul li a:hover {
 
 .slogan {
     color: black;
-    text-align: center;
-    font-family: "Shadows Into Light";
-    font-size: 24px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 100;
-    line-height: 20px;
+    margin-left: 20px;
 }
 
 .page_title {
