@@ -43,7 +43,7 @@ include_once "access-db.php";
 
     </div>
 
-    <div id="content">
+    <div class="banner-welcome" id="content">
         <div id="left">
             <div class="slogan">
                 <div class="banner-title">
