@@ -1,22 +1,23 @@
 :root {
     --teal: #008080;
-    --yellow: #cbcaa5;
+    --cream: #eae7dc;
+    --silverblack: #303133;
 }
 
 body {
-    background: #334d50;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #cbcaa5, #334d50);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #cbcaa5, #334d50);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    color: white;
-    font-family: "Anton", sans-serif;
+    
+    background-color: var(--cream);
+    color: var(--silverblack) ;
+    font-family: 'Playfair Display', serif;
 }
 
-.main_container {}
+.start-interview-btn {
+    display:block;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,.3);
+}
 
 .logo a {
     font-family: "Righteous", cursive;

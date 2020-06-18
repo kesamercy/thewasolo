@@ -16,6 +16,7 @@ include_once "access-db.php";
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Alatsi|Anton|Righteous&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Shadows+Into+Light" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;800;900&display=swap" rel="stylesheet">
     <title>Welcome</title>
 </head>
 
@@ -40,6 +41,31 @@ include_once "access-db.php";
 
     </div>
 
+    <div id="content">
+        <div id="left">
+            <div class="slogan">
+
+
+                <div class="banner-title before-login">
+                    <h1>We are committed to helping you understand your patient's needs.</h1>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="right">
+            <div class="welcomepage-card">
+            
+            <img src="patient.svg" alt="">
+            <a class="start-interview-btn" href="#"> Start Interview</a>
+                
+            </div>
+
+        </div>
+    </div>
+
+
     <div class="welcomePage" id="pageDetails">
         <div class="welcomePage_title_container">
             <h1 class="page_title">Hospital Translation Tool</h1>
@@ -58,6 +84,9 @@ include_once "access-db.php";
             <div class="day" id="day"></div>
             <div id='clock'></div>
         </div>
+
+
+        Icons made by <a href="https://www.flaticon.com/free-icon/information_2764540" title="monkik">monkik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
 
 
     </div>
