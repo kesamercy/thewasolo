@@ -58,6 +58,8 @@ include_once "access-db.php";
             <div class="welcomepage-card">
             
             <img height="200" width="200" src="patient.svg" alt="">
+            <h2>The medical translator</h2>
+            
             <a class="start-interview-btn" href="pat-lang.php"> Start Interview</a>
                 
             </div>

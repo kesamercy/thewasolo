@@ -1,297 +1,289 @@
 :root {
-    --teal: #008080;
-    --cream: #eae7dc;
-    --silverblack: #303133;
+  --teal: #008080;
+  --cream: #eae7dc;
+  --silverblack: #303133;
 }
 
 body {
-    
-    background-color: var(--cream);
-    color: var(--silverblack) ;
-    font-family: 'Playfair Display', serif;
-    padding: 20px;
+  background-color: var(--cream);
+  color: var(--silverblack);
+  font-family: "Playfair Display", serif;
+  padding: 20px;
 }
 
-
-
 .logo a {
-    font-family: "Righteous", cursive;
-    text-decoration: none;
+  font-family: "Righteous", cursive;
+  text-decoration: none;
 }
 
 .header {
-    padding: 10px;
+  padding: 10px;
 }
 
 .menu_welcomePage {
-    font-family: "Alatsi", sans-serif;
-    float: right;
+  font-family: "Alatsi", sans-serif;
+  float: right;
 }
 
 ul li {
-    display: inline;
-    padding: 50px;
+  display: inline;
+  padding: 50px;
 }
 
 ul li a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 ul li a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
-
 
 /* styling for the welcome page */
 .start-interview-btn {
-    display:block;
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    background-color: rgba(0,0,0,.3);
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
-  .banner-welcome #right, .banner-welcome #left  {
-    width: 50%;
-    text-align: center;
-  }
+.banner-welcome #right,
+.banner-welcome #left {
+  width: 50%;
+  text-align: center;
+}
 
-  .banner-welcome #right {
-    background-repeat: no-repeat;
-    background: linear-gradient(rgba(20, 20, 20, 0.8), rgba(20, 20, 20, 0.8)),
-      url(medical-background-vector-22.jpg);
-    background-size: cover;
-  }
+.banner-welcome #right {
+}
 
-  .banner-title {
-    display: inline-block;
-    text-align: left;
-    margin-top: 350px;
-  }
+.banner-title {
+  display: inline-block;
+  text-align: left;
+  margin-top: 350px;
+}
 
-  .banner-title h1 {
-      font-size: 50px;
-  }
+.banner-title h1 {
+  font-size: 50px;
+}
 
 /* styling for the split page for login and sign up*/
 #content {
-    display: flex;
-  }
-  
-  #left,
-  #right {
-    flex-grow: 1;
-    color: #fff;
-  }
+  display: flex;
+}
+
+#left,
+#right {
+  flex-grow: 1;
+  color: #fff;
+}
 
 .welcomePage_title_container {
-    width: 40%;
-    margin: auto;
-    padding-top: 50px;
+  width: 40%;
+  margin: auto;
+  padding-top: 50px;
 }
 
 .slogan {
-    color: black;
-    margin-left: 20px;
+  color: black;
+  margin-left: 20px;
 }
 
 .page_title {
-    font-family: "Anton", sans-serif;
-    font-size: 65px;
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 5px;
-    color: white;
+  font-family: "Anton", sans-serif;
+  font-size: 65px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 5px;
+  color: white;
 }
 
 .welcomePage_button,
 .next_button {
-    background-color: #008080;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: auto;
+  background-color: #008080;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: auto;
 }
 
-.content {}
+.content {
+}
 
 .updateQstns_modal {
-    margin: auto;
-    background-color: var(--teal);
-    text-align: center;
-    padding: 50px;
-    position: relative;
-    height: 540px;
-    width: 30%;
-    border-radius: 20px;
-    color: white;
-    font-family: "Alatsi", sans-serif;
+  margin: auto;
+  background-color: var(--teal);
+  text-align: center;
+  padding: 50px;
+  position: relative;
+  height: 540px;
+  width: 30%;
+  border-radius: 20px;
+  color: white;
+  font-family: "Alatsi", sans-serif;
 }
 
 .updateQstns_title {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 input[type="text"] {
-    background: transparent;
-    border: none;
-    border-bottom: 1px solid #000000;
-    border-color: white;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #000000;
+  border-color: white;
 }
 
 input[type="submit"] {
-    background-color: black;
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-decoration: none;
-    margin: 4px 2px;
-    cursor: pointer;
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
 input[type="file"] {
-    background-color: black;
+  background-color: black;
 }
 
 .selectLanguageTitle {
-    font-size: 30px;
-    margin: auto;
+  font-size: 30px;
+  margin: auto;
 }
 
 .listOFlanguages,
 .categories {
-    margin: auto;
-    width: 40%;
-    height: 250px;
-    font-family: "Alatsi", sans-serif;
-    column-count: 2;
+  margin: auto;
+  width: 40%;
+  height: 250px;
+  font-family: "Alatsi", sans-serif;
+  column-count: 2;
 }
 
 .categoryTitle {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 .category_subtitle {
-    font-size: 15px;
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 5px;
-    text-decoration: none;
-    cursor: pointer;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 5px;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .categories {
-    padding: 30px;
-    width: 80%;
-    column-count: unset;
+  padding: 30px;
+  width: 80%;
+  column-count: unset;
 }
 
 audio {
-    height: 15px;
-    width: 150px;
-    text-align: center;
+  height: 15px;
+  width: 150px;
+  text-align: center;
 }
 
 .skinCategory {
-    display: none;
+  display: none;
 }
 
 a {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .patientResponseFormat {
-    font-size: 11px;
+  font-size: 11px;
 }
-
 
 /* styling for the select language check boxes */
 
 .option-input {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -ms-appearance: none;
-    -o-appearance: none;
-    appearance: none;
-    position: relative;
-    top: 13.33333px;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    height: 40px;
-    width: 40px;
-    transition: all 0.15s ease-out 0s;
-    background: #cbd1d8;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    display: inline-block;
-    margin-right: 0.5rem;
-    outline: none;
-    position: relative;
-    z-index: 1000;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  position: relative;
+  top: 13.33333px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 40px;
+  width: 40px;
+  transition: all 0.15s ease-out 0s;
+  background: #cbd1d8;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 0.5rem;
+  outline: none;
+  position: relative;
+  z-index: 1000;
 }
 
 .option-input:hover {
-    background: #9faab7;
+  background: #9faab7;
 }
 
 .option-input:checked {
-    background: var(--teal);
+  background: var(--teal);
 }
 
 .option-input:checked::before {
-    height: 40px;
-    width: 40px;
-    position: absolute;
-    content: "✔";
-    display: inline-block;
-    font-size: 26.66667px;
-    text-align: center;
-    line-height: 40px;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  content: "✔";
+  display: inline-block;
+  font-size: 26.66667px;
+  text-align: center;
+  line-height: 40px;
 }
 
 .option-input:checked::after {
-    -webkit-animation: click-wave 0.65s;
-    -moz-animation: click-wave 0.65s;
-    animation: click-wave 0.65s;
-    background: #40e0d0;
-    content: "";
-    display: block;
-    position: relative;
-    z-index: 100;
+  -webkit-animation: click-wave 0.65s;
+  -moz-animation: click-wave 0.65s;
+  animation: click-wave 0.65s;
+  background: #40e0d0;
+  content: "";
+  display: block;
+  position: relative;
+  z-index: 100;
 }
 
 .option-input.radio {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 .option-input.radio::after {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 .lang_label {
-    display: block;
-    line-height: 40px;
+  display: block;
+  line-height: 40px;
 }
-
 
 /* response form styling */
 
 input[id="responseFormat_number"] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
-
 
 /* input[type=patientResponse] {
     width: 100%;
@@ -304,210 +296,204 @@ input[id="responseFormat_number"] {
 } */
 
 input[id="responseFormSubmitButton"] {
-    width: 100%;
-    background-color: var(--teal);
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+  width: 100%;
+  background-color: var(--teal);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .responseForm {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-    width: 50%;
-    margin: auto;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 50%;
+  margin: auto;
 }
-
 
 /* begin button styling */
 
 .round-button {
-    width: 15%;
-    margin: auto;
+  width: 15%;
+  margin: auto;
 }
 
 .round-button-circle {
-    width: 100%;
-    height: 0;
-    padding-bottom: 100%;
-    border-radius: 50%;
-    border: 10px solid #98a1a4;
-    overflow: hidden;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  border-radius: 50%;
+  border: 10px solid #98a1a4;
+  overflow: hidden;
 }
 
 .round-button-circle {
-    width: 100%;
-    height: 0;
-    padding-bottom: 100%;
-    border-radius: 50%;
-    border: 1px dotted white;
-    overflow: hidden;
-    background: transparent;
-    box-shadow: 0 0 1px gray;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  border-radius: 50%;
+  border: 1px dotted white;
+  overflow: hidden;
+  background: transparent;
+  box-shadow: 0 0 1px gray;
 }
 
 .round-button-circle:hover {
-    background: var(--yellow);
+  background: var(--yellow);
 }
 
 .round-button a {
-    display: block;
-    float: left;
-    width: 100%;
-    padding-top: 50%;
-    padding-bottom: 50%;
-    line-height: 1em;
-    margin-top: -0.5em;
-    text-align: center;
-    color: #e2eaf3;
-    font-family: Verdana;
-    font-size: 1.2em;
-    font-weight: 100;
-    text-decoration: none;
-    font-family: "Anton", sans-serif;
-    letter-spacing: 3px;
+  display: block;
+  float: left;
+  width: 100%;
+  padding-top: 50%;
+  padding-bottom: 50%;
+  line-height: 1em;
+  margin-top: -0.5em;
+  text-align: center;
+  color: #e2eaf3;
+  font-family: Verdana;
+  font-size: 1.2em;
+  font-weight: 100;
+  text-decoration: none;
+  font-family: "Anton", sans-serif;
+  letter-spacing: 3px;
 }
 
 .time {
-    font-family: "Courier New", Courier, monospace;
-    font-size: 30px;
-    text-transform: uppercase;
-    margin-left: 20px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-left: 20px;
 }
 
 .day {
-    margin-left: 30px;
+  margin-left: 30px;
 }
-
 
 /* styling for the arrows */
 
 .arrow {
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 3px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
 }
 
 .left {
-    transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
-    margin-left: 50%;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  margin-left: 50%;
 }
-
 
 /* styling for the modal */
 
 .w3-container {
-    margin-top: 150px;
+  margin-top: 150px;
 }
 
 .question-content {
-    text-align: center;
+  text-align: center;
 }
 
 .question-title {
-    font-size: 40px;
-    margin-top: 30px;
+  font-size: 40px;
+  margin-top: 30px;
 }
 
 .question {
-    font-size: 20px;
-    margin-top: 40px;
+  font-size: 20px;
+  margin-top: 40px;
 }
 
 .modal-nav-div {
-    display: flex;
-    margin: unset;
+  display: flex;
+  margin: unset;
 }
 
 .modal-nav-buttons {
-    flex: 1;
-    padding: 40px;
-    margin-left: 60px;
+  flex: 1;
+  padding: 40px;
+  margin-left: 60px;
 }
 
 @media (min-width: 993px) {
-    .local-modal {
-        height: 300px;
-        width: 500px;
-        background-color: #7e9a81;
-    }
+  .local-modal {
+    height: 300px;
+    width: 500px;
+    background-color: #7e9a81;
+  }
 }
-
 
 /* styling for the patient responses */
 
 .answers {
-    text-align: center;
-    margin: auto;
-    width: 40%;
+  text-align: center;
+  margin: auto;
+  width: 40%;
 }
 
 .answer-One {
-    height: 200px;
-    width: 400px;
-    background-color: yellow;
-    display: flex;
-    justify-content: space-between;
-    padding: 70px;
-    margin-top: 50px;
+  height: 200px;
+  width: 400px;
+  background-color: yellow;
+  display: flex;
+  justify-content: space-between;
+  padding: 70px;
+  margin-top: 50px;
 }
 
 .answer-two {
-    height: 200px;
-    width: 400px;
-    background-color: blue;
+  height: 200px;
+  width: 400px;
+  background-color: blue;
 }
 
 .answer-three {
-    height: 200px;
-    width: 400px;
-    background-color: pink;
-    margin-top: 30px;
+  height: 200px;
+  width: 400px;
+  background-color: pink;
+  margin-top: 30px;
 }
-
 
 /* styling for the answer shapes */
 
 .triangle-up {
-    width: 0;
-    height: 0;
-    border-left: 25px solid transparent;
-    border-right: 25px solid transparent;
-    border-bottom: 50px solid #555;
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 50px solid #555;
 }
 
 .circle {
-    height: 50px;
-    width: 50px;
-    background-color: #555;
-    border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  background-color: #555;
+  border-radius: 50%;
 }
-
 
 /* styling for the range slider */
 
 .slidecontainer {
-    width: 60%;
+  width: 60%;
 }
 
 .slider {
-    -webkit-appearance: none;
-    width: 80%;
-    height: 25px;
-    background: gray;
-    outline: none;
-    opacity: 0.7;
-    -webkit-transition: 0.2s;
-    transition: opacity 0.2s;
-    margin: 40px;
+  -webkit-appearance: none;
+  width: 80%;
+  height: 25px;
+  background: gray;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  margin: 40px;
 }
 
 .slider:hover {
-    opacity: 1;
+  opacity: 1;
 }
