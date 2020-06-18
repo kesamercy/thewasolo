@@ -51,7 +51,7 @@ ul li a:hover {
     background-color: rgba(0,0,0,.3);
 }
 
-  .content #right, .content #left  {
+  .banner-welcome #right, .banner-welcome #left  {
     width: 50%;
     text-align: center;
   }
