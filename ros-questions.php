@@ -12,11 +12,12 @@ $query_results = $conn->query($query);
 
 if (count($_POST) > 0) {
 
-    $lang_id = $_SESSION['language'];
+    // $lang_id = $_SESSION['language'];
+    $lang_id = 2;
     $category_id = $_POST['category'];
 
     echo 'this is the lang id', $lang_id;
-    echo $category_id;
+    echo 'the cateogry id', $category_id;
 
     // this is the code responsible to show the questions for the chosen category 
     $sql = "SELECT * FROM translator_content WHERE language_id='$lang_id' AND category_id='$category_id'";
