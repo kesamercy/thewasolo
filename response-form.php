@@ -23,9 +23,29 @@ include_once "access-db.php";
 
 <body class="language_container">
 
+    <div class="header">
+
+        <div class="menu_welcomePage">
+            <ul>
+
+                <li><a href="update-db.php">update questions</a> </li>
+                <li>
+                    <a href="./index.php">welcome page</a> </li>
+                <li> <a href="./index.php">about</a> </li>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="logo">
+            <h2 class="logo"> <a href="./index.html">e.translate</a> </h2>
+        </div>
+
+    </div>
+
     <div class="mainQuestion_category">
 
-    <?php
+        <?php
 
         if (isset($_POST['response'])) {
 
@@ -59,11 +79,11 @@ include_once "access-db.php";
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/index.js"></script>
     <script>
-        $(document).ready(function() {
+    $(document).ready(function() {
 
 
 
-        });
+    });
     </script>
 
 

@@ -29,16 +29,16 @@ include_once "access-db.php";
         <div class="menu_welcomePage">
             <ul>
 
-                <li><a href="javascript:loadPage('./updateQuestions.html')">update questions</a> </li>
+                <li><a href="update-db.php">update questions</a> </li>
                 <li>
-                    <a href="./index.html">welcome page</a> </li>
+                    <a href="./index.php">welcome page</a> </li>
                 <li>about</li>
 
             </ul>
         </div>
 
         <div class="logo">
-            <h2 class="logo"> <a href="./index.html">thewasolo</a> </h2>
+            <h2 class="logo"> <a href="./index.html">e.translate</a> </h2>
         </div>
 
     </div>
