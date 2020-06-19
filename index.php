@@ -56,9 +56,8 @@ if (isset($_POST['btn-login'])) {
         <div class="menu_welcomePage">
             <ul>
 
-                <li><a href="update-db.php">update questions</a> </li>
                 <li>
-                    <a href="./index.php">welcome page</a> </li>
+                    <a href="about.php">about</a> </li>
                 <li><a href="login.php">Login</a> </li>
 
             </ul>

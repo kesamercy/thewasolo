@@ -45,10 +45,8 @@ if (count($_POST) > 0) {
             <ul>
 
                 <li><a href="update-db.php">update questions</a> </li>
-                <li>
-                    <a href="./index.php">welcome page</a> </li>
-                <li> <a href="./index.php">about</a> </li>
-                </li>
+                <li><a href="index.php">home</a> </li>
+                <li><a href="logout.php">Logout</a> </li>
 
             </ul>
         </div>
