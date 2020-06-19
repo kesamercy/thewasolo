@@ -56,10 +56,12 @@ include_once "access-db.php";
 
         <div id="right">
             <div class="welcomepage-card">
+                <br><br>
             
             <img height="200" width="200" src="patient.svg" alt="">
-            <h2>The medical translator</h2>
-            
+            <h2>THE MEDICAL TRANSLATOR</h2>
+
+            <br><br><br>
             <a class="start-interview-btn" href="pat-lang.php"> Start Interview</a>
                 
             </div>
