@@ -106,7 +106,7 @@ if (isset($_POST['btn-login'])) {
                         <span class="close">&times;</span>
 
                         <h1>LOGIN</h1>
-
+                        <br><br>
                         <div class="display-message">
                             <?php
                               if (isset($_SESSION['message'])) {
