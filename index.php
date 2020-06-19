@@ -47,10 +47,9 @@ include_once "access-db.php";
     <div class="banner-welcome" id="content">
         <div id="left">
             <div class="slogan">
-                <img src="Free_Presciption_Pad_Vector/Free Presciption Pad Vector.svg" alt="">
-                <div class="banner-title">
-                    <h1>We are Committed to Helping you Understand your Patient's Needs.</h1>
-                </div>
+                <br><br>
+                <img width="600" height="600" src="Free_Presciption_Pad_Vector/Free Presciption Pad Vector.svg" alt="">
+                
 
             </div>
 
@@ -63,6 +62,9 @@ include_once "access-db.php";
                 <img height="200" width="200" src="patient-doctor.svg" alt="">
                 <br><br>
                 <h2>THE MEDICAL TRANSLATOR</h2>
+                <div class="banner-title">
+                    <h1>We are Committed to Helping you Understand your Patient's Needs.</h1>
+                </div>
 
                 <br><br><br>
                 <a class="start-interview-btn" href="pat-lang.php"> Start Interview</a>
