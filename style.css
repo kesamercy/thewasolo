@@ -4,6 +4,11 @@
   --silverblack: #303133;
 }
 
+html *
+{
+    font-family: 'Roboto', sans-serif;
+}
+
 body {
   background-color: var(--cream);
   color: white;
