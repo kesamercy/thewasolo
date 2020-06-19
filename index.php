@@ -59,11 +59,15 @@ include_once "access-db.php";
             <div class="welcomepage-card">
                 <br><br><br><br><br><br>
 
-                <img height="200" width="200" src="patient-doctor.svg" alt="">
+                <img height="100" width="100" src="patient-doctor.svg" alt="">
                 <br><br>
                 <h2>THE MEDICAL TRANSLATOR</h2>
                 <div class="banner-title">
-                    <h1>We are Committed to Helping you Understand your Patient's Needs.</h1>
+                    <h1> At e.translate, we are Committed to Helping you Understand your Patient's Needs.
+                        The medical translation tool helps doctors and patients who speak 
+                        different languages to communicate through the translation capabilites 
+                        afforded throguh the application.
+                    </h1>
                 </div>
 
                 <br><br><br>
