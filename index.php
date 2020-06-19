@@ -19,11 +19,12 @@ if (isset($_POST['btn-login'])) {
 
             header("location:pat-lang.php?user_id=" . $idnum);
         } else {
-            echo 'incorrect password';
+            $_SESSION['message'] = 'Incorrect password';
+            
         }
     } else {
-        echo '<p>the user does not exist</p>';
-        
+        $_SESSION['message'] = 'The user does not exist';
+
     }
 }
 ?>
@@ -104,6 +105,17 @@ if (isset($_POST['btn-login'])) {
                     <!-- Modal content -->
                     <div class="modal-content">
                         <span class="close">&times;</span>
+
+                        <h1>Login</h1>
+
+                        <div class="display-message">
+                            <?php
+                              if (isset($_SESSION['message'])) {
+                                  echo $_SESSION['message'];
+                                  unset($_SESSION['message']);
+                              }
+                              ?>
+                        </div>
                         <div id="frm">
                             <form method='POST' action="">
 

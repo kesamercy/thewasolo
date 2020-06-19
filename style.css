@@ -1,7 +1,9 @@
 :root {
   --teal: #008080;
-  --cream: #2f4454;
+  --dark-blue: #2f4454;
   --silverblack: #303133;
+  --yellowcolor: #faaf42;
+  --displaymessagecolor: #ff726f;
 }
 
 html *
@@ -10,7 +12,7 @@ html *
 }
 
 body {
-  background-color: var(--cream);
+  background-color: var(--dark-blue);
   color: white;
   /* font-family: "Playfair Display", serif; */
   /* padding: 20px; */
@@ -82,7 +84,7 @@ ul li a:hover {
     width: 80%;
     font-size: 20px;
     letter-spacing: 4px;
-    color: #faaf42;
+    color: var(--yellowcolor);
 }
 
 .welcomepage-card h2 {
@@ -526,7 +528,7 @@ input[id="responseFormSubmitButton"] {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  padding-top: 300px; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -538,12 +540,12 @@ input[id="responseFormSubmitButton"] {
 
 /* Modal Content */
 .modal-content {
-  background-color: #fefefe;
+  background-color:var(--dark-blue);
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%;
-  color: black;
+  width: 40%;
+  color: white;
 }
 
 /* The Close Button */
@@ -561,6 +563,15 @@ input[id="responseFormSubmitButton"] {
   cursor: pointer;
 }
 
+/* styling for the login modal */
+.modal-content h1 {
+  font-size: 20px;
+}
+
+.display-message {
+  color: var(--displaymessagecolor);
+  text-align: center;
+}
 
 
 /* styling for the FOOTER PART */
