@@ -13,7 +13,7 @@ body {
   background-color: var(--cream);
   color: white;
   /* font-family: "Playfair Display", serif; */
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 .logo a {

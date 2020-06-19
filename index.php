@@ -47,6 +47,7 @@ include_once "access-db.php";
     <div class="banner-welcome" id="content">
         <div id="left">
             <div class="slogan">
+                <img src="medical-icon.svg" alt="">
                 <div class="banner-title">
                     <h1>We are Committed to Helping you Understand your Patient's Needs.</h1>
                 </div>
@@ -70,10 +71,12 @@ include_once "access-db.php";
 
         </div>
     </div>
-    <br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br>
 
 
     <div class="footer">
+    <a href="https://www.vecteezy.com/free-vector/doctor">Doctor Vectors by Vecteezy</a>
+    <a href="https://www.vecteezy.com/free-vector/medical-infographics">Medical Infographics Vectors by Vecteezy</a>
         Icons made by <a href="https://www.flaticon.com/free-icon/information_2764540" title="monkik">monkik</a> from <a
             href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
         <a href="https://vectorified.com/medical-background-vector">Medical Background Vector</a>
