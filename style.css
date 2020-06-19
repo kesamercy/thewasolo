@@ -1,6 +1,6 @@
 :root {
   --teal: #008080;
-  --cream: #eae7dc;
+  --cream: #2f4454;
   --silverblack: #303133;
 }
 
@@ -65,6 +65,8 @@ ul li a:hover {
 
 .banner-title h1 {
   font-size: 50px;
+  letter-spacing: 4px;
+  color: #da7b93;
 }
 
 /* styling for the split page for login and sign up*/
@@ -75,7 +77,6 @@ ul li a:hover {
 #left,
 #right {
   flex-grow: 1;
-  color: #fff;
 }
 
 .welcomePage_title_container {
