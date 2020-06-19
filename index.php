@@ -71,7 +71,7 @@ include_once "access-db.php";
                 </div>
 
                 <br><br><br>
-                <a id="myBtn" class="start-interview-btn" href="pat-lang.php"> Start Interview</a>
+                <a id="myBtn" class="start-interview-btn" > Start Interview</a>
 
                 <!-- The Modal -->
                 <div id="myModal" class="modal">
