@@ -153,15 +153,10 @@ if (count($_POST) > 0) {
 
     } 
 
-    
-
-    
-    
-
     ?>
     <br><br><br>
 
-    <a href="ros-questions.php"> Follow up questions</a>
+    <a class="route-btn" href="ros-questions.php"> Follow up questions</a>
 
 </body>
 
