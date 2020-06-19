@@ -33,7 +33,7 @@ include_once "access-db.php";
                 <li><a href="update-db.php">update questions</a> </li>
                 <li>
                     <a href="./index.php">welcome page</a> </li>
-                <li>about</li>
+                <li><a href="login.php">Login</a> </li>
 
             </ul>
         </div>
@@ -49,7 +49,7 @@ include_once "access-db.php";
             <div class="slogan">
                 <br><br>
                 <img width="600" height="600" src="Free_Presciption_Pad_Vector/Free Presciption Pad Vector.svg" alt="">
-                
+
 
             </div>
 
@@ -64,14 +64,25 @@ include_once "access-db.php";
                 <h2>THE MEDICAL TRANSLATOR</h2>
                 <div class="banner-title">
                     <h1> At e.translate, we are Committed to Helping you Understand your Patient's Needs.
-                        The medical translation tool helps doctors and patients who speak 
-                        different languages to communicate through the translation capabilites 
+                        The medical translation tool helps doctors and patients who speak
+                        different languages to communicate through the translation capabilites
                         afforded throguh the application.
                     </h1>
                 </div>
 
                 <br><br><br>
-                <a class="start-interview-btn" href="pat-lang.php"> Start Interview</a>
+                <a id="myBtn" class="start-interview-btn" href="pat-lang.php"> Start Interview</a>
+
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p>Some text in the Modal..</p>
+                    </div>
+
+                </div>
 
             </div>
 
@@ -81,8 +92,8 @@ include_once "access-db.php";
 
 
     <div class="footer">
-    <a href="https://www.vecteezy.com/free-vector/doctor">Doctor Vectors by Vecteezy</a>
-    <a href="https://www.vecteezy.com/free-vector/medical-infographics">Medical Infographics Vectors by Vecteezy</a>
+        <a href="https://www.vecteezy.com/free-vector/doctor">Doctor Vectors by Vecteezy</a>
+        <a href="https://www.vecteezy.com/free-vector/medical-infographics">Medical Infographics Vectors by Vecteezy</a>
         Icons made by <a href="https://www.flaticon.com/free-icon/information_2764540" title="monkik">monkik</a> from <a
             href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
         <a href="https://vectorified.com/medical-background-vector">Medical Background Vector</a>
@@ -90,71 +101,71 @@ include_once "access-db.php";
 
 
     <!-- FOOTER START -->
-<div class="footer">
-  <div class="contain">
-  <div class="col">
-    <h1>Company</h1>
-    <ul>
-      <li>About</li>
-      <li>Mission</li>
-      <li>Services</li>
-      <li>Social</li>
-      <li>Get in touch</li>
-    </ul>
-  </div>
-  <div class="col">
-    <h1>Products</h1>
-    <ul>
-      <li>About</li>
-      <li>Mission</li>
-      <li>Services</li>
-      <li>Social</li>
-      <li>Get in touch</li>
-    </ul>
-  </div>
-  <div class="col">
-    <h1>Accounts</h1>
-    <ul>
-      <li>About</li>
-      <li>Mission</li>
-      <li>Services</li>
-      <li>Social</li>
-      <li>Get in touch</li>
-    </ul>
-  </div>
-  <div class="col">
-    <h1>Resources</h1>
-    <ul>
-      <li>Webmail</li>
-      <li>Redeem code</li>
-      <li>WHOIS lookup</li>
-      <li>Site map</li>
-      <li>Web templates</li>
-      <li>Email templates</li>
-    </ul>
-  </div>
-  <div class="col">
-    <h1>Support</h1>
-    <ul>
-      <li>Contact us</li>
-      <li>Web chat</li>
-      <li>Open ticket</li>
-    </ul>
-  </div>
-  <div class="col social">
-    <h1>Social</h1>
-    <ul>
-      <li><img src="https://svgshare.com/i/5fq.svg" width="32" style="width: 32px;"></li>
-      <li><img src="https://svgshare.com/i/5eA.svg" width="32" style="width: 32px;"></li>
-      <li><img src="https://svgshare.com/i/5f_.svg" width="32" style="width: 32px;"></li>
-    </ul>
-  </div>
-<div class="clearfix"> </div>
-</div>
-</div>
-<!-- END OF FOOTER -->
+    <div class="footer">
+        <div class="contain">
+            <div class="col">
+                <h1>Company</h1>
+                <ul>
+                    <li>About</li>
+                    <li>Mission</li>
+                    <li>Services</li>
+                    <li>Social</li>
+                    <li>Get in touch</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h1>Products</h1>
+                <ul>
+                    <li>About</li>
+                    <li>Mission</li>
+                    <li>Services</li>
+                    <li>Social</li>
+                    <li>Get in touch</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h1>Accounts</h1>
+                <ul>
+                    <li>About</li>
+                    <li>Mission</li>
+                    <li>Services</li>
+                    <li>Social</li>
+                    <li>Get in touch</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h1>Resources</h1>
+                <ul>
+                    <li>Webmail</li>
+                    <li>Redeem code</li>
+                    <li>WHOIS lookup</li>
+                    <li>Site map</li>
+                    <li>Web templates</li>
+                    <li>Email templates</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h1>Support</h1>
+                <ul>
+                    <li>Contact us</li>
+                    <li>Web chat</li>
+                    <li>Open ticket</li>
+                </ul>
+            </div>
+            <div class="col social">
+                <h1>Social</h1>
+                <ul>
+                    <li><img src="https://svgshare.com/i/5fq.svg" width="32" style="width: 32px;"></li>
+                    <li><img src="https://svgshare.com/i/5eA.svg" width="32" style="width: 32px;"></li>
+                    <li><img src="https://svgshare.com/i/5f_.svg" width="32" style="width: 32px;"></li>
+                </ul>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+    <!-- END OF FOOTER -->
 
- 
+
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
