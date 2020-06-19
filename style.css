@@ -74,15 +74,15 @@ ul li a:hover {
 }
 
 .banner-title {
-  display: inline-block;
-  text-align: left;
-  margin-top: 50px;
+    display: inline-block;
+    margin-left: 150px;
 }
 
 .banner-title h1 {
-  font-size: 30px;
-  letter-spacing: 4px;
-  color: #faaf42;
+    width: 80%;
+    font-size: 20px;
+    letter-spacing: 4px;
+    color: #faaf42;
 }
 
 .welcomepage-card h2 {
