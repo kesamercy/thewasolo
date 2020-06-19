@@ -59,6 +59,7 @@ include_once "access-db.php";
                 <br><br>
             
             <img height="200" width="200" src="patient.svg" alt="">
+            <br><br>
             <h2>THE MEDICAL TRANSLATOR</h2>
 
             <br><br><br>
