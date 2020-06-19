@@ -10,13 +10,13 @@ include_once "access-db.php";
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>The Wasolo</title>
     <link rel="stylesheet" type="text/css" href="css/demo.css" />
-    
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Alatsi|Anton|Righteous&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Shadows+Into+Light" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
+   
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;800;900&display=swap" rel="stylesheet">
    
     <title>Welcome</title>
@@ -56,7 +56,7 @@ include_once "access-db.php";
 
         <div id="right">
             <div class="welcomepage-card">
-                <br><br>
+                <br><br><br><br><br><br>
             
             <img height="200" width="200" src="patient.svg" alt="">
             <br><br>

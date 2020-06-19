@@ -7,7 +7,8 @@
 body {
   background-color: var(--cream);
   color: white;
-  font-family: "Playfair Display", serif;
+  /* font-family: "Playfair Display", serif; */
+  font-family: 'Roboto', sans-serif;
   padding: 20px;
 }
 
@@ -46,6 +47,7 @@ ul li a:hover {
   text-decoration: none;
   display: inline-block;
   background-color: rgba(0, 0, 0, 0.3);
+  width: 400px;
 }
 
 .banner-welcome #right,
