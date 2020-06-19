@@ -105,7 +105,7 @@ if (isset($_POST['btn-login'])) {
                     <div class="modal-content">
                         <span class="close">&times;</span>
                         <div id="frm">
-                            <form method='POST' action="doctor-login-auth.php">
+                            <form method='POST' action="">
 
                                 <input type="text" class="login_input" id="email" name="email" placeholder="Enter Email"
                                     required>
