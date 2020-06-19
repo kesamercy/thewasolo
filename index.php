@@ -106,7 +106,7 @@ if (isset($_POST['btn-login'])) {
                     <div class="modal-content">
                         <span class="close">&times;</span>
 
-                        <h1>Login</h1>
+                        <h1>LOGIN</h1>
 
                         <div class="display-message">
                             <?php

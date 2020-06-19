@@ -80,7 +80,7 @@ ul li a:hover {
     margin-left: 150px;
 }
 
-.banner-title h1 {
+.banner-title h1, .modal-content h1 {
     width: 80%;
     font-size: 20px;
     letter-spacing: 4px;
@@ -564,9 +564,6 @@ input[id="responseFormSubmitButton"] {
 }
 
 /* styling for the login modal */
-.modal-content h1 {
-  font-size: 20px;
-}
 
 .display-message {
   color: var(--displaymessagecolor);
