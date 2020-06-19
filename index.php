@@ -71,7 +71,7 @@ include_once "access-db.php";
                 </div>
 
                 <br><br><br>
-                <a id="myBtn" class="start-interview-btn" > Start Interview</a>
+                <a id="myBtn" class="start-interview-btn"> Start Interview</a>
 
                 <!-- The Modal -->
                 <div id="myModal" class="modal">
@@ -79,7 +79,38 @@ include_once "access-db.php";
                     <!-- Modal content -->
                     <div class="modal-content">
                         <span class="close">&times;</span>
-                        <p>Some text in the Modal..</p>
+                        <div id="frm">
+                            <form method='POST' action="customer-login-auth.php">
+
+                                <input type="text" class="login_input" id="email" name="email" placeholder="Enter Email"
+                                    autofocus>
+                                <br><br>
+                                <input type="text" class="login_input" id="paswd" name="paswd"
+                                    placeholder="Enter Password">
+
+                                <br><br>
+                                <div class="button">
+                                    <div class="button__text"><input class="submit-button" id="btn" type="submit"
+                                            value="Login" name="btn-login"></input></div>
+
+                                    <div class="button__wrapper">
+                                        <div class="button__arrow"></div>
+                                        <div class="button__border-circle"></div>
+                                        <div class="button__mask-circle">
+                                            <div class="button__small-circle"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <br>
+                                <br>
+
+                                <a href="user-forgot.php" id="forgot_link_id"> forgot password? </a>
+                                <br>
+                                <br>
+
+                            </form>
+                        </div>
                     </div>
 
                 </div>
