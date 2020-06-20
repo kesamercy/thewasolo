@@ -19,7 +19,12 @@
         <!-- if the doctor clicks next category, then retrive the questions in the next category -->
 
 
-
+// you need this as a hidden feature so that you can return the selected value when the form is submitted.
+                            //you do not need to submit the question since the patient will listen to that via audio
+                            //you need to submit the cateogy so that the correct response form is displayed for the patient to enter their answer
+                            // <!-- get response button to submit the question for the patient to respond selected qtn and submit the form-->
+                            
+                        
 
 
 

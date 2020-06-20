@@ -101,7 +101,7 @@ if (count($_POST) > 0) {
 
                     // <!-- select all the questions for the specified language and the category -->
                     if ($result->num_rows > 0) {
-                        echo "<table class='prodcue-table'><tr style='height: 80px'><th style='text-align:left'> Id </th><th style='text-align:left'> Question </th> <th style='text-align:left'> Audio </th> </tr><br><br>";
+                        echo "<table class='prodcue-table'><tr style='height: 80px'><th style='text-align:left'> Id </th><th style='text-align:center'> Question </th> <th style='text-align:center'> Audio </th> </tr><br><br>";
 
                         
                         // output data of each row
@@ -110,12 +110,14 @@ if (count($_POST) > 0) {
                             echo "<form method='post' action='response-form.php'>";
 
                             $qtn_id = $row["question_id"];
+                            $id = $row["id"];
+                            $audio_path = $row["sourcefile"];
+                            
                             $sql = "SELECT question FROM translator_questions WHERE id='$qtn_id'";
                             $result = $conn->query($sql);
-                            $id = $row["id"];
+                            
                             $qtn = $row["question"];
-                            $audio_path = $row["sourcefile"];
-
+                            
                             echo "<tr style='height: 40px'>
                                 <td>" . $id . "</td>
                                 <td>" . $qtn . "</td>
