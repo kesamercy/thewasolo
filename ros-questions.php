@@ -101,16 +101,12 @@ if (count($_POST) > 0) {
 
                     // <!-- select all the questions for the specified language and the category -->
                     if ($result->num_rows > 0) {
-                        // you need this as a hidden feature so that you can return the selected value when the form is submitted.
-                            //you do not need to submit the question since the patient will listen to that via audio
-                            //you need to submit the cateogy so that the correct response form is displayed for the patient to enter their answer
-                            // <!-- get response button to submit the question for the patient to respond selected qtn and submit the form-->
-                            
+                        echo "<table class='prodcue-table'><tr style='height: 80px'><th style='text-align:left'> Id </th><th style='text-align:left'> Question </th> <th style='text-align:left'> Audio </th> </tr><br><br>";
+
                         
                         // output data of each row
                         while ($row = mysqli_fetch_array($result)) {
-                            echo "<table class='prodcue-table'><tr style='height: 80px'><th style='text-align:left'> Id </th><th style='text-align:left'> Question </th> <th style='text-align:left'> Audio </th> </tr><br><br>";
-
+                            
                             echo "<form method='post' action='response-form.php'>";
 
                             $qtn_id = $row["question_id"];
