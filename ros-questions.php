@@ -63,7 +63,7 @@ if (count($_POST) > 0) {
     <div class="page-content">
 
 
-        <p>Please select the body category for the questions you would like to ask the patient </p>
+    <h1 class="page_title">Select the Body Category for the Questions to Ask the Patient </h1>
         <!-- get all the questions from the chosen category and show them-->
         <!-- you need the type as a hidden in the form so that you can return the selected category when the form is submitted.-->
         <?php
