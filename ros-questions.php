@@ -142,6 +142,35 @@ if (count($_POST) > 0) {
 
                 ?>
         </div>
+
+
+        <div class="patient-asnwers">
+
+            <?php
+
+                if (isset($_POST['record-response'])) {
+                    $answer = $_POST["response"];
+                    $question = $_POST["question"];
+                    $patient_id = $_SESSION['patient_id'];
+
+                    // think about recording the session number too
+
+                    // display the patient response for the doctor
+                    echo "<p> Patient answer: " . $answer . " </p>";
+
+                    // store the response into the db for the paitent responses
+                    if (mysqli_query($conn, "INSERT INTO patient_table (patient_id, question, answer) VALUES ('$patient_id', '$question', '$answer')")) {
+                        echo 'patient response has been recorded ';
+
+                    } else {
+                        echo 'there was an error with the system, patient response was not recorded';
+                    }
+
+                }
+
+            ?>
+
+        </div>
         
        
     </div>
