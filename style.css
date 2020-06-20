@@ -91,6 +91,10 @@ ul li a:hover {
     letter-spacing: 5px;
 }
 
+.page-content {
+  padding: 40px;
+}
+
 /* styling for the split page for login and sign up*/
 #content {
   display: flex;
@@ -101,11 +105,11 @@ ul li a:hover {
   flex-grow: 1;
 }
 
-.welcomePage_title_container {
+/* .welcomePage_title_container {
   width: 40%;
   margin: auto;
   padding-top: 50px;
-}
+} */
 
 .slogan {
   color: black;
@@ -113,12 +117,11 @@ ul li a:hover {
 }
 
 .page_title {
-  font-family: "Anton", sans-serif;
   font-size: 65px;
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 5px;
-  color: white;
+  color: var(--yellowcolor);
 }
 
 .welcomePage_button,
@@ -173,11 +176,6 @@ input[type="submit"] {
 
 input[type="file"] {
   background-color: black;
-}
-
-.selectLanguageTitle {
-  font-size: 30px;
-  margin: auto;
 }
 
 .listOFlanguages,
