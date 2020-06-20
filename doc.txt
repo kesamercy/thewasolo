@@ -17,3 +17,17 @@
         <!-- so you update the session code so that the session for the patient and the doctor are the same -->
 
         <!-- if the doctor clicks next category, then retrive the questions in the next category -->
+
+
+
+
+
+
+
+ <hr>
+
+        
+       
+        <form action="patient-answers.php">
+            <input type="submit" name="end-interview" value="End Interview">
+        </form>

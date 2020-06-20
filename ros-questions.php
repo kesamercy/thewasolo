@@ -99,56 +99,49 @@ if (count($_POST) > 0) {
 
                 <?php
 
-                // <!-- select all the questions for the specified language and the category -->
-                if ($result->num_rows > 0) {
-                    // you need this as a hidden feature so that you can return the selected value when the form is submitted.
-                        //you do not need to submit the question since the patient will listen to that via audio
-                        //you need to submit the cateogy so that the correct response form is displayed for the patient to enter their answer
-                        // <!-- get response button to submit the question for the patient to respond selected qtn and submit the form-->
+                    // <!-- select all the questions for the specified language and the category -->
+                    if ($result->num_rows > 0) {
+                        // you need this as a hidden feature so that you can return the selected value when the form is submitted.
+                            //you do not need to submit the question since the patient will listen to that via audio
+                            //you need to submit the cateogy so that the correct response form is displayed for the patient to enter their answer
+                            // <!-- get response button to submit the question for the patient to respond selected qtn and submit the form-->
+                            
                         
-                    
-                    // output data of each row
-                    while ($row = mysqli_fetch_array($result)) {
-                        echo "<table class='prodcue-table'><tr style='height: 80px'><th style='text-align:left'> Id </th><th style='text-align:left'> Question </th> <th style='text-align:left'> Audio </th> </tr><br><br>";
+                        // output data of each row
+                        while ($row = mysqli_fetch_array($result)) {
+                            echo "<table class='prodcue-table'><tr style='height: 80px'><th style='text-align:left'> Id </th><th style='text-align:left'> Question </th> <th style='text-align:left'> Audio </th> </tr><br><br>";
 
-                        echo "<form method='post' action='response-form.php'>";
+                            echo "<form method='post' action='response-form.php'>";
 
-                        $qtn_id = $row["question_id"];
-                        $sql = "SELECT question FROM translator_questions WHERE id='$qtn_id'";
-                        $result = $conn->query($sql);
-                        $id = $row["id"];
-                        $qtn = $row["question"];
-                        $audio_path = $row["sourcefile"];
+                            $qtn_id = $row["question_id"];
+                            $sql = "SELECT question FROM translator_questions WHERE id='$qtn_id'";
+                            $result = $conn->query($sql);
+                            $id = $row["id"];
+                            $qtn = $row["question"];
+                            $audio_path = $row["sourcefile"];
 
-                        echo "<tr style='height: 40px'>
-                            <td>" . $id . "</td>
-                            <td>" . $qtn . "</td>
-                            <td> <audio controls>
-                                <source src='horse.ogg' type='audio/ogg'>
-                                <source src='mercytesting.mp3' type='audio/mpeg'>
-                                Your browser does not support the audio element.
-                                </audio> </td>
-                                <input name='category'  type='hidden' value='$category_id' >
-                            <td> <input type='submit' name='response' value='get response'> </td>
-                            </tr>";
-                        echo "</form>";
-                    } 
+                            echo "<tr style='height: 40px'>
+                                <td>" . $id . "</td>
+                                <td>" . $qtn . "</td>
+                                <td> <audio controls>
+                                    <source src='horse.ogg' type='audio/ogg'>
+                                    <source src='mercytesting.mp3' type='audio/mpeg'>
+                                    Your browser does not support the audio element.
+                                    </audio> </td>
+                                    <input name='category'  type='hidden' value='$category_id' >
+                                <td> <input type='submit' name='response' value='get response'> </td>
+                                </tr>";
+                            echo "</form>";
+                        } 
 
-                } else {
-                    echo "0 results for the questions based on the language and the category";
-                }
+                    } else {
+                        echo "0 results for the questions based on the language and the category";
+                    }
 
                 ?>
         </div>
         
-        <hr>
-
-        
        
-        <form action="patient-answers.php">
-            <input type="submit" name="end-interview" value="End Interview">
-        </form>
-
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
