@@ -154,8 +154,6 @@ if (count($_POST) > 0) {
 
                     <div class="patient-asnwers">
 
-                        <p class="page_title"> Patient Response in Real Time</p>
-
                         <?php
 
                             if (isset($_POST['record-response'])) {
@@ -166,7 +164,7 @@ if (count($_POST) > 0) {
                             // think about recording the session number too
 
                             // display the patient response for the doctor
-                            echo "<p> Patient answer: " . $answer . " </p>";
+                            echo "<h3 class='page_title'> Patient answer: " . $answer . " </h3>";
 
                             // store the response into the db for the paitent responses
                             if (mysqli_query($conn, "INSERT INTO patient_table (patient_id, question, answer) VALUES ('$patient_id', '$question', '$answer')")) {
