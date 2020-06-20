@@ -27,6 +27,10 @@
                         
 
 
+<!-- get all the questions from the chosen category and show them-->
+                        <!-- you need the type as a hidden in the form so that you can return the selected category when the form is submitted.-->
+                        
+
 
 
  <hr>
