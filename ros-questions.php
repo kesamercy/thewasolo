@@ -94,40 +94,41 @@ if ($query_results->num_rows > 0) {
 
 // <!-- select all the questions for the specified language and the category -->
 if ($result->num_rows > 0) {
+    // you need this as a hidden feature so that you can return the selected value when the form is submitted.
+        //you do not need to submit the question since the patient will listen to that via audio
+        //you need to submit the cateogy so that the correct response form is displayed for the patient to enter their answer
+         // <!-- get response button to submit the question for the patient to respond selected qtn and submit the form-->
+        
+    echo "<div class='display-qtns' >";
 
     // output data of each row
     while ($row = mysqli_fetch_array($result)) {
+        echo "<table class='prodcue-table'><tr style='height: 80px'></tr><br><br>";
 
         echo "<form method='post' action='response-form.php'>";
 
         $qtn_id = $row["question_id"];
         $sql = "SELECT question FROM translator_questions WHERE id='$qtn_id'";
         $result = $conn->query($sql);
+        $id = $row["id"];
         $qtn = $row["question"];
-
-        //     <!-- get the first qtn from the results and display the text in english -->
-        echo "<h1> " . $qtn . " </h1>";
-
-        // <!-- get the file path for that qtn to retrive the audio and show t -->
         $audio_path = $row["sourcefile"];
-        echo "<img src='image.png' onclick='playAudio('mysound.mp3')'>";
 
-        echo "<audio controls>
+        echo "<tr style='height: 40px'>
+            <td>" . $id . "</td>
+            <td>" . $qtn . "</td>
+            <td> <audio controls>
                 <source src='horse.ogg' type='audio/ogg'>
-                <source src='horse.mp3' type='audio/mpeg'>
-            Your browser does not support the audio element.
-            </audio>";
-
-        // you need this as a hidden feature so that you can return the selected value when the form is submitted.
-        //you do not need to submit the question since the patient will listen to that via audio
-        //you need to submit the cateogy so that the correct response form is displayed for the patient to enter their answer
-        echo "<input name='category'  type='hidden' value='$category_id' >";
-
-        // <!-- get response button to submit the question for the patient to respond selected qtn and submit the form-->
-        echo "<input type='submit' name='response' value='get response'>";
-
+                <source src='mercytesting.mp3' type='audio/mpeg'>
+                Your browser does not support the audio element.
+                </audio> </td>
+                <input name='category'  type='hidden' value='$category_id' >
+            <td> <input type='submit' name='response' value='get response'> </td>
+            </tr>";
         echo "</form>";
     }
+
+    echo "</div>";
 
 } else {
     echo "0 results for the questions based on the language and the category";
