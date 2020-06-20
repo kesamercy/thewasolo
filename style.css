@@ -24,7 +24,7 @@ body {
 }
 
 .header {
-  padding: 10px;
+  padding: 50px;
 }
 
 .menu_welcomePage {
@@ -92,7 +92,12 @@ ul li a:hover {
 }
 
 .page-content {
-  padding: 40px;
+  padding: 100px;
+  text-align: center;
+}
+
+.language-table {
+  display: inline-block;
 }
 
 /* styling for the split page for login and sign up*/
@@ -117,10 +122,7 @@ ul li a:hover {
 }
 
 .page_title {
-  font-size: 65px;
-  text-transform: uppercase;
   text-align: center;
-  letter-spacing: 5px;
   color: var(--yellowcolor);
 }
 

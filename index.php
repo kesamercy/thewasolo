@@ -56,15 +56,15 @@ if (isset($_POST['btn-login'])) {
         <div class="menu_welcomePage">
             <ul>
 
-                <li>
-                    <a href="about.php">about</a> </li>
+                <li><a href="about.php">about</a> </li>
+                <li><a href="pat-lang.php">select language</a> </li>
                 <li><a href="login.php">Login</a> </li>
 
             </ul>
         </div>
 
         <div class="logo">
-            <h2 class="logo"> <a href="./index.html">e.translate</a> </h2>
+            <h2 class="logo"> <a href="index.html">e.translate</a> </h2>
         </div>
 
     </div>

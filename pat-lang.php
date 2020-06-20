@@ -2,9 +2,9 @@
 session_start();
 include_once "access-db.php";
 
-// if(!isset($_SESSION["user_id"])){ //if login in session is not set
-//     header("location:farmer-login.php");
-// }
+if(!isset($_SESSION["user_id"])){ //if login in session is not set
+    header("location:index.php");
+}
 
 $sql = "SELECT * FROM translator_language";
 $result = $conn->query($sql);
@@ -45,7 +45,7 @@ if (count($_POST) > 0) {
             <ul>
 
                 <li><a href="update-db.php">update questions</a> </li>
-                <!-- <li><a href="index.php">home</a> </li> -->
+                <li><a href="index.php">home</a> </li>
                 <li><a href="logout.php">Logout</a> </li>
 
             </ul>
@@ -67,13 +67,13 @@ if (count($_POST) > 0) {
 
     <div class="page-content">
 
-        <h1 class="page_title"> Patient, Please Select Your langauge </h1>
+        <h1 class="page_title">  Select Patient Your langauge </h1>
 
         <?php
 
             if ($result->num_rows > 0) {
 
-                echo "<table class='prodcue-table'><tr style='height: 80px'><th style='text-align:left'> Language </th></tr><br><br>";
+                echo "<table class='language-table'><tr style='height: 80px'></tr><br><br>";
 
                 // output data of each row
                 while ($row = mysqli_fetch_array($result)) {
