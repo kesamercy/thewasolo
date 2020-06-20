@@ -88,17 +88,17 @@ if (count($_POST) > 0) {
         <div class="menu_welcomePage">
             <ul>
 
-                <li><a href="update-db.php">update questions</a> </li>
+                <li><a href="body-exam.php">body exam</a> </li>
                 <li>
-                    <a href="./index.php">welcome page</a> </li>
-                <li> <a href="./index.php">about</a> </li>
+                    <a href="index.php">welcome page</a> </li>
+                <li> <a href="logout.php">logout</a> </li>
                 </li>
 
             </ul>
         </div>
 
         <div class="logo">
-            <h2 class="logo"> <a href="./index.html">e.translate</a> </h2>
+            <h2 class="logo"> <a href="index.php">e.translate</a> </h2>
         </div>
 
     </div>
@@ -108,23 +108,23 @@ if (count($_POST) > 0) {
     <!-- you need the type as a hidden in the form so that you can return the selected category when the form is submitted.-->
     <?php
 
-        if ($query_results->num_rows > 0) {
+        if ($query_results->num_rows > 0) { 
             echo "<table class='prodcue-table'><tr style='height: 80px'><th style='text-align:left'> category </th></tr><br><br>";
-
+            echo "<tr style='height: 40px'>";
             // output data of each row
             while ($row = mysqli_fetch_array($query_results)) {
                 echo "<form method='post' action=''>";
                 $category = $row["cat_name"];
                 $category_id = $row["id"];
                 
-                echo "<tr style='height: 40px'>
-                            <td>" . $category . "</td>
+                echo "<td>" . $category . "</td>
                             
                             <input name='category'  type='hidden' value='$category_id' >
-                            <td> <input type='submit' value='select'></td>
-                        </tr>";
+                            <td> <input type='submit' value='select'></td>";
+                        
                         echo "</form>";
             }
+            echo "</tr>";
             echo "</table>";
 
         } else {

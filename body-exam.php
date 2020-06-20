@@ -51,18 +51,20 @@ if (count($_POST) > 0) {
 
                 <li><a href="update-db.php">update questions</a> </li>
                 <li>
-                    <a href="./index.php">welcome page</a> </li>
-                <li> <a href="./index.php">about</a> </li>
+                    <a href="index.php">welcome page</a> </li>
+                <li> <a href="logout.php">logout</a> </li>
                 </li>
 
             </ul>
         </div>
 
         <div class="logo">
-            <h2 class="logo"> <a href="./index.html">e.translate</a> </h2>
+            <h2 class="logo"> <a href="index.html">e.translate</a> </h2>
         </div>
 
     </div>
+
+    <h1 class="page_title">Select the body part where you feel pain</h1>
 
     <!-- Human Body //-->
     <div class="human-body">
@@ -156,8 +158,8 @@ if (count($_POST) > 0) {
     ?>
     <br><br><br>
 
+    
     <a class="route-btn body-exam-route-btn" href="ros-questions.php"> Follow up questions</a>
-
 </body>
 
 </html>

@@ -67,7 +67,7 @@ if (count($_POST) > 0) {
 
     <div class="page-content">
 
-        <h1 class="page_title">  Select Patient Your langauge </h1>
+        <h1 class="page_title">  Select the Patient's langauge </h1>
 
         <?php
 
