@@ -102,5 +102,21 @@
 }
 
 #area #data {
-    color: black;
+    color: white;
 }
+
+/* styling the page elements for routing and naviagtion on the page */
+
+ul a {
+    color: white;
+}
+
+.logo a {
+    font-family: "Righteous", cursive;
+    text-decoration: none;
+    color: white;
+  }
+
+  .body-exam-route-btn {
+      padding-left: 400px;
+  }

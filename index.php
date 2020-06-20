@@ -109,11 +109,11 @@ if (isset($_POST['btn-login'])) {
                         <br><br>
                         <div class="display-message">
                             <?php
-if (isset($_SESSION['message'])) {
-    echo $_SESSION['message'];
-    unset($_SESSION['message']);
-}
-?>
+                              if (isset($_SESSION['message'])) {
+                                  echo $_SESSION['message'];
+                                  unset($_SESSION['message']);
+                              }
+                              ?>
                         </div>
                         <div id="frm">
                             <form method='POST' action="">
