@@ -154,6 +154,8 @@ if (count($_POST) > 0) {
 
                     <div class="patient-asnwers">
 
+                        <p class="page_title"> Patient Response in Real Time</p>
+
                         <?php
 
                             if (isset($_POST['record-response'])) {
