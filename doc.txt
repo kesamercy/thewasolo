@@ -1,0 +1,19 @@
+ from the ROS-questions page.
+ 
+ <!-- show the doctor the response from the patient  -->
+
+        <!-- save the doctor question and the response to the response form table in the database -->
+        <!-- when the doctor clicks the end interview button, the retrive the data from the response form table -->
+
+        <!-- when that submit button is clicked, show the question on the parent portal   -->
+        <!-- have the form submit to patient.auth -->
+        <!-- the paitent auth should display the content that has been submitied and the paitnet should see the question -->
+        <!-- the paithent response form should show -->
+        <!-- the paitient response should be submitted and shown on the response section for the doctor -->
+
+
+
+        <!--the landing page for the paitent should be the page that asks for the code from the doctor to accept. that code should be saved as the session code  -->
+        <!-- so you update the session code so that the session for the patient and the doctor are the same -->
+
+        <!-- if the doctor clicks next category, then retrive the questions in the next category -->

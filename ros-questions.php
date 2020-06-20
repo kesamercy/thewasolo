@@ -132,9 +132,7 @@ if (count($_POST) > 0) {
                             <td> <input type='submit' name='response' value='get response'> </td>
                             </tr>";
                         echo "</form>";
-                    }
-
-                    
+                    } 
 
                 } else {
                     echo "0 results for the questions based on the language and the category";
@@ -145,58 +143,8 @@ if (count($_POST) > 0) {
         
         <hr>
 
-        <div class="patient-asnwers">
-
-
-            <h1>Patient real-time response</h1>
-
-            <?php
-
-                if (isset($_POST['record-response'])) {
-                    $answer = $_POST["response"];
-                    $question = $_POST["question"];
-                    $patient_id = $_SESSION['patient_id'];
-
-                    // think about recording the session number too
-
-                    // display the patient response for the doctor
-                    echo "<p> Patient answer: " . $answer . " </p>";
-
-                    // store the response into the db for the paitent responses
-                    if (mysqli_query($conn, "INSERT INTO patient_table (patient_id, question, answer) VALUES ('$patient_id', '$question', '$answer')")) {
-                        echo 'patient response has been recorded ';
-
-                    } else {
-                        echo 'there was an error with the system, patient response was not recorded';
-                    }
-
-                }
-
-            ?>
-
-        </div>
-
-
-
-
-        <!-- show the doctor the response from the patient  -->
-
-        <!-- save the doctor question and the response to the response form table in the database -->
-        <!-- when the doctor clicks the end interview button, the retrive the data from the response form table -->
-
-        <!-- when that submit button is clicked, show the question on the parent portal   -->
-        <!-- have the form submit to patient.auth -->
-        <!-- the paitent auth should display the content that has been submitied and the paitnet should see the question -->
-        <!-- the paithent response form should show -->
-        <!-- the paitient response should be submitted and shown on the response section for the doctor -->
-
-
-
-        <!--the landing page for the paitent should be the page that asks for the code from the doctor to accept. that code should be saved as the session code  -->
-        <!-- so you update the session code so that the session for the patient and the doctor are the same -->
-
-        <!-- if the doctor clicks next category, then retrive the questions in the next category -->
-
+        
+       
         <form action="patient-answers.php">
             <input type="submit" name="end-interview" value="End Interview">
         </form>
