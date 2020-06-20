@@ -69,6 +69,7 @@ if (count($_POST) > 0) {
         <?php
 
 if ($query_results->num_rows > 0) {
+    echo "<table class='prodcue-table'><tr style='height: 80px'></tr><br><br>";
     echo "<tr style='height: 40px'>";
     // output data of each row
     while ($row = mysqli_fetch_array($query_results)) {
@@ -76,10 +77,8 @@ if ($query_results->num_rows > 0) {
         $category = $row["cat_name"];
         $category_id = $row["id"];
 
-        echo "<td>" . $category . "</td>
-
-                            <input name='category'  type='hidden' value='$category_id' >
-                            <td> <input type='submit' value='$category'></td>";
+        echo "<input name='category'  type='hidden' value='$category_id' >
+                <td> <input type='submit' value='$category'></td>";
 
         echo "</form>";
     }
