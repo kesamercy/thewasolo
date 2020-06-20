@@ -62,107 +62,120 @@ if (count($_POST) > 0) {
 
     <div class="page-content">
 
+        <div class="categories">
 
-    <h1 class="page_title">Select the Body Category for the Questions to Ask the Patient </h1>
-        <!-- get all the questions from the chosen category and show them-->
-        <!-- you need the type as a hidden in the form so that you can return the selected category when the form is submitted.-->
-        <?php
-
-if ($query_results->num_rows > 0) {
-    echo "<table class='prodcue-table'><tr style='height: 80px'></tr><br><br>";
-    echo "<tr style='height: 40px'>";
-    // output data of each row
-    while ($row = mysqli_fetch_array($query_results)) {
-        echo "<form method='post' action=''>";
-        $category = $row["cat_name"];
-        $category_id = $row["id"];
-
-        echo "<input name='category'  type='hidden' value='$category_id' >
-                <td> <input type='submit' value='$category'></td>";
-
-        echo "</form>";
-    }
-    echo "</tr>";
-    echo "</table>";
-
-} else {
-    echo "0 results for the category table";
-}
-?>
-
-        <?php
-
-// <!-- select all the questions for the specified language and the category -->
-if ($result->num_rows > 0) {
-    // you need this as a hidden feature so that you can return the selected value when the form is submitted.
-        //you do not need to submit the question since the patient will listen to that via audio
-        //you need to submit the cateogy so that the correct response form is displayed for the patient to enter their answer
-         // <!-- get response button to submit the question for the patient to respond selected qtn and submit the form-->
         
-    echo "<div class='display-qtns' >";
+            <h1 class="page_title">Select the Body Category for the Questions to Ask the Patient </h1>
+            <!-- get all the questions from the chosen category and show them-->
+            <!-- you need the type as a hidden in the form so that you can return the selected category when the form is submitted.-->
+            <?php
 
-    // output data of each row
-    while ($row = mysqli_fetch_array($result)) {
-        echo "<table class='prodcue-table'><tr style='height: 80px'><th style='text-align:left'> Id </th><th style='text-align:left'> Question </th> <th style='text-align:left'> Audio </th> </tr><br><br>";
+                if ($query_results->num_rows > 0) {
+                    echo "<table class='prodcue-table'><tr style='height: 80px'></tr><br><br>";
+                    echo "<tr style='height: 40px'>";
+                    // output data of each row
+                    while ($row = mysqli_fetch_array($query_results)) {
+                        echo "<form method='post' action=''>";
+                        $category = $row["cat_name"];
+                        $category_id = $row["id"];
 
-        echo "<form method='post' action='response-form.php'>";
+                        echo "<input name='category'  type='hidden' value='$category_id' >
+                                <td> <input type='submit' value='$category'></td>";
 
-        $qtn_id = $row["question_id"];
-        $sql = "SELECT question FROM translator_questions WHERE id='$qtn_id'";
-        $result = $conn->query($sql);
-        $id = $row["id"];
-        $qtn = $row["question"];
-        $audio_path = $row["sourcefile"];
+                        echo "</form>";
+                    }
+                    echo "</tr>";
+                    echo "</table>";
 
-        echo "<tr style='height: 40px'>
-            <td>" . $id . "</td>
-            <td>" . $qtn . "</td>
-            <td> <audio controls>
-                <source src='horse.ogg' type='audio/ogg'>
-                <source src='mercytesting.mp3' type='audio/mpeg'>
-                Your browser does not support the audio element.
-                </audio> </td>
-                <input name='category'  type='hidden' value='$category_id' >
-            <td> <input type='submit' name='response' value='get response'> </td>
-            </tr>";
-        echo "</form>";
-    }
+                } else {
+                    echo "0 results for the category table";
+                }
+            ?>
 
-    echo "</div>";
+        </div>
 
-} else {
-    echo "0 results for the questions based on the language and the category";
-}
 
-?>
+        <div class="display-qtns">
 
+                <?php
+
+                // <!-- select all the questions for the specified language and the category -->
+                if ($result->num_rows > 0) {
+                    // you need this as a hidden feature so that you can return the selected value when the form is submitted.
+                        //you do not need to submit the question since the patient will listen to that via audio
+                        //you need to submit the cateogy so that the correct response form is displayed for the patient to enter their answer
+                        // <!-- get response button to submit the question for the patient to respond selected qtn and submit the form-->
+                        
+                    
+                    // output data of each row
+                    while ($row = mysqli_fetch_array($result)) {
+                        echo "<table class='prodcue-table'><tr style='height: 80px'><th style='text-align:left'> Id </th><th style='text-align:left'> Question </th> <th style='text-align:left'> Audio </th> </tr><br><br>";
+
+                        echo "<form method='post' action='response-form.php'>";
+
+                        $qtn_id = $row["question_id"];
+                        $sql = "SELECT question FROM translator_questions WHERE id='$qtn_id'";
+                        $result = $conn->query($sql);
+                        $id = $row["id"];
+                        $qtn = $row["question"];
+                        $audio_path = $row["sourcefile"];
+
+                        echo "<tr style='height: 40px'>
+                            <td>" . $id . "</td>
+                            <td>" . $qtn . "</td>
+                            <td> <audio controls>
+                                <source src='horse.ogg' type='audio/ogg'>
+                                <source src='mercytesting.mp3' type='audio/mpeg'>
+                                Your browser does not support the audio element.
+                                </audio> </td>
+                                <input name='category'  type='hidden' value='$category_id' >
+                            <td> <input type='submit' name='response' value='get response'> </td>
+                            </tr>";
+                        echo "</form>";
+                    }
+
+                    
+
+                } else {
+                    echo "0 results for the questions based on the language and the category";
+                }
+
+                ?>
+        </div>
+        
         <hr>
 
-        <h1>Patient real-time response</h1>
+        <div class="patient-asnwers">
 
-        <?php
 
-if (isset($_POST['record-response'])) {
-    $answer = $_POST["response"];
-    $question = $_POST["question"];
-    $patient_id = $_SESSION['patient_id'];
+            <h1>Patient real-time response</h1>
 
-    // think about recording the session number too
+            <?php
 
-    // display the patient response for the doctor
-    echo "<p> Patient answer: " . $answer . " </p>";
+                if (isset($_POST['record-response'])) {
+                    $answer = $_POST["response"];
+                    $question = $_POST["question"];
+                    $patient_id = $_SESSION['patient_id'];
 
-    // store the response into the db for the paitent responses
-    if (mysqli_query($conn, "INSERT INTO patient_table (patient_id, question, answer) VALUES ('$patient_id', '$question', '$answer')")) {
-        echo 'patient response has been recorded ';
+                    // think about recording the session number too
 
-    } else {
-        echo 'there was an error with the system, patient response was not recorded';
-    }
+                    // display the patient response for the doctor
+                    echo "<p> Patient answer: " . $answer . " </p>";
 
-}
+                    // store the response into the db for the paitent responses
+                    if (mysqli_query($conn, "INSERT INTO patient_table (patient_id, question, answer) VALUES ('$patient_id', '$question', '$answer')")) {
+                        echo 'patient response has been recorded ';
 
-?>
+                    } else {
+                        echo 'there was an error with the system, patient response was not recorded';
+                    }
+
+                }
+
+            ?>
+
+        </div>
+
 
 
 
@@ -183,7 +196,6 @@ if (isset($_POST['record-response'])) {
         <!-- so you update the session code so that the session for the patient and the doctor are the same -->
 
         <!-- if the doctor clicks next category, then retrive the questions in the next category -->
-        <p>for each category, change the expected response form on the patient page.</p>
 
         <form action="patient-answers.php">
             <input type="submit" name="end-interview" value="End Interview">
