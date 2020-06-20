@@ -103,7 +103,7 @@ if ($result->num_rows > 0) {
 
     // output data of each row
     while ($row = mysqli_fetch_array($result)) {
-        echo "<table class='prodcue-table'><tr style='height: 80px'></tr><br><br>";
+        echo "<table class='prodcue-table'><tr style='height: 80px'><th style='text-align:left'> Id </th><th style='text-align:left'> Question </th> <th style='text-align:left'> Audio </th> </tr><br><br>";
 
         echo "<form method='post' action='response-form.php'>";
 
