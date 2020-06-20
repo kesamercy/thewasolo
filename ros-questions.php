@@ -112,24 +112,28 @@ if (count($_POST) > 0) {
                             $qtn_id = $row["question_id"];
                             $id = $row["id"];
                             $audio_path = $row["sourcefile"];
-                            
-                            $sql = "SELECT question FROM translator_questions WHERE id='$qtn_id'";
-                            $result = $conn->query($sql);
-                            
-                            $qtn = $row["question"];
-                            
-                            echo "<tr style='height: 40px'>
-                                <td>" . $id . "</td>
-                                <td>" . $qtn . "</td>
-                                <td> <audio controls>
-                                    <source src='horse.ogg' type='audio/ogg'>
-                                    <source src='mercytesting.mp3' type='audio/mpeg'>
-                                    Your browser does not support the audio element.
-                                    </audio> </td>
-                                    <input name='category'  type='hidden' value='$category_id' >
-                                <td> <input type='submit' name='response' value='get response'> </td>
-                                </tr>";
-                            echo "</form>";
+
+                            $new_sql = "SELECT question FROM translator_questions WHERE id='$qtn_id'";
+                            $new_result = $conn->query($new_sql);
+
+                            if ($new_row = mysqli_fetch_array($new_result)) {
+                                # code...
+                                $qtn = $new_row["question"];
+                                
+                                echo "<tr style='height: 40px'>
+                                    <td>" . $id . "</td>
+                                    <td>" . $qtn . "</td>
+                                    <td> <audio controls>
+                                        <source src='horse.ogg' type='audio/ogg'>
+                                        <source src='mercytesting.mp3' type='audio/mpeg'>
+                                        Your browser does not support the audio element.
+                                        </audio> </td>
+                                        <input name='category'  type='hidden' value='$category_id' >
+                                    <td> <input type='submit' name='response' value='get response'> </td>
+                                    </tr>";
+                                echo "</form>";
+
+                            }
                         } 
 
                     } else {
