@@ -24,4 +24,8 @@ if(isset($_POST['enable'])) {
     header("location:pat-lang.php?");
 }
 
+else {
+    echo "post was not enabled";
+}
+
 ?>
