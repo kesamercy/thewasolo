@@ -13,6 +13,8 @@ if (count($_POST) > 0) {
     $query = "SELECT * FROM translator_doctors WHERE session_code='$code'";
     $result = mysqli_query($conn, $query);
 
+    echo $query;
+
     if ($result->num_rows > 0) {
             header("location:patient-info.php?");
         } 
