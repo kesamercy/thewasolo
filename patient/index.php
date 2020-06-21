@@ -2,10 +2,11 @@
 session_start();
 include_once "access-db.php";
 
-echo "did we get here?";
+
 
 if (count($_POST) > 0) {
 
+    echo "did we get here?";
     $code = $_POST["code"];
     
     $query = "SELECT * FROM translator_doctors WHERE session_code='$code'";
