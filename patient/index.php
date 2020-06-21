@@ -2,6 +2,8 @@
 session_start();
 include_once "access-db.php";
 
+echo "did we get here?";
+
 if (count($_POST) > 0) {
 
     $code = $_POST["code"];
@@ -16,6 +18,9 @@ if (count($_POST) > 0) {
             $_SESSION['message'] = 'Incorrect session code';
 
         }
+} else {
+
+    echo "post was not submitted";
 }
 ?>
 <!DOCTYPE html>
