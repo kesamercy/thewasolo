@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once "../access-db.php";
+include_once "./access-db.php";
 
 
 
@@ -70,7 +70,7 @@ if (count($_POST) > 0) {
             <div class="slogan">
                 <br><br>
 
-                <form action="">
+                <form method="POST" action="">
                     <input type="text" name="code" placeholder="Enter code here" >
                     <input type="submit" name="get-code" value="Submit code">
                 </form>
