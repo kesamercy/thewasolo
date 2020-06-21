@@ -6,8 +6,9 @@ include_once "./access-db.php";
 
 if (count($_POST) > 0) {
 
-    echo "did we get here?";
+    
     $code = $_POST["code"];
+    echo $code;
     
     $query = "SELECT * FROM translator_doctors WHERE session_code='$code'";
     $result = mysqli_query($conn, $query);
