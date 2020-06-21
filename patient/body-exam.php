@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-include_once "access-db.php";
+include_once "../access-db.php";
 
 // if(!isset($_SESSION["user_id"])){ //if login in session is not set
 //     header("location:farmer-login.php");
@@ -34,11 +34,12 @@ if (count($_POST) > 0) {
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- Stylesheet Docs -->
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
     <!-- Javascript Docs -->
-    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="../index.js"></script>
 
 </head>
 
@@ -49,10 +50,10 @@ if (count($_POST) > 0) {
         <div class="menu_welcomePage">
             <ul>
 
-                <li><a href="update-db.php">update questions</a> </li>
+                <!-- <li><a href="update-db.php">update questions</a> </li>
                 <li>
-                    <a href="index.php">welcome page</a> </li>
-                <li> <a href="logout.php">logout</a> </li>
+                    <a href="index.php">welcome page</a> </li> -->
+                <!-- <li> <a href="logout.php">logout</a> </li> -->
                 </li>
 
             </ul>
@@ -159,7 +160,7 @@ if (count($_POST) > 0) {
     <br><br><br>
 
     
-    <a class="route-btn body-exam-route-btn" href="ros-questions.php"> Follow up questions</a>
+    <a class="route-btn body-exam-route-btn" href="response-form.php"> <i class="fa fa-thumbs-o-up fa-5x" aria-hidden="true"></i></a>
 </body>
 
 </html>

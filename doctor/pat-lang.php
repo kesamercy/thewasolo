@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once "access-db.php";
+include_once "../access-db.php";
 
 if(!isset($_SESSION["user_id"])){ //if login in session is not set
     header("location:index.php");
@@ -17,7 +17,7 @@ if (count($_POST) > 0) {
     $_SESSION['language'] = $_POST['lang_id'];
 
     //route to the body exam page
-    header("location:body-exam.php?");
+    header("location:ros-questions.php?");
 
 }
 
@@ -30,7 +30,7 @@ if (count($_POST) > 0) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>The Wasolo</title>
     <link rel="stylesheet" type="text/css" href="css/demo.css" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="../style.css" />
     <script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">

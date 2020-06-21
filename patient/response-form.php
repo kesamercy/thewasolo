@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once "access-db.php";
+include_once "../access-db.php";
 
 // if(!isset($_SESSION["user_id"])){ //if login in session is not set
 //     header("location:farmer-login.php");
@@ -14,10 +14,13 @@ include_once "access-db.php";
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>The Wasolo</title>
     <link rel="stylesheet" type="text/css" href="css/demo.css" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="../style.css" />
     <script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    
     <title> Patient Response Form</title>
 </head>
 
@@ -70,9 +73,15 @@ include_once "access-db.php";
             ";
             echo "</form>";
 
+            // after response is submitted, update the db with the response sent 
+            // when the thumbs up button is clicked, prompt the doctor to get the paitent response.- light the get response button green
+            //when the doctor clicks the button, show the patient response.
+
         }
 
         ?>
+
+<a class="route-btn body-exam-route-btn" href="response-form.php"> <i class="fa fa-thumbs-o-up fa-5x" aria-hidden="true"></i></a>
 
     </div>
 
