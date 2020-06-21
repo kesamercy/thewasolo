@@ -11,10 +11,10 @@ if (count($_POST) > 0) {
     echo $code;
     
     $query = "SELECT * FROM translator_doctors WHERE session_code='$code'";
-    $result = $conn->query($query);
+    $result = mysqli_query($conn, $query);
 
-    if ($result->num_rows > 0) {
-            echo "we got here";
+    if ($row = mysqli_fetch_assoc($result)) {
+            echo $row['email'];
             header("location:patient-info.php?");
         } 
         else {
