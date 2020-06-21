@@ -7,6 +7,8 @@ if(isset($_POST['enable'])) {
     // geenerate the code 
     $code= strval(mt_rand(100000, 999999));
 
+    echo $code;
+
     $doctor_id = $_SESSION['user_id'];
     
     //show the code on the doctor portal so they can give the paitent to enter
