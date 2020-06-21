@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once "../access-db.php";
+include_once "access-db.php";
 
 
 
@@ -73,10 +73,20 @@ if (count($_POST) > 0) {
                 <br><br>
 
                 <form method="POST" action="">
-                    <input type="text" name="code" placeholder="Enter code here" >
+                    <input type="text" name="code" placeholder="Enter code here">
                     <input type="submit" name="get-code" value="Submit code">
                 </form>
- 
+
+                <div class="display-message">
+                    <?php
+                if (isset($_SESSION['session-code'])) {
+                    echo $_SESSION['session-code'];
+                    unset($_SESSION['session-code']);
+                }
+                ?>
+                </div>
+
+
 
             </div>
 
@@ -85,7 +95,7 @@ if (count($_POST) > 0) {
         <div id="right">
             <div class="welcomepage-card">
                 <br><br><br><br><br><br>
-                
+
 
             </div>
 
@@ -94,12 +104,12 @@ if (count($_POST) > 0) {
     <br><br><br><br><br><br>
 
 
-    
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="index.js"></script>
     <script>
-    
+
     </script>
 
 </body>
