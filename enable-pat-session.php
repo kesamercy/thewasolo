@@ -2,7 +2,11 @@
 session_start();
 include_once "access-db.php";
 
+echo "did we get here";
+
 if(isset($_POST['enable'])) {
+
+    echo "did we get there";
 
     // geenerate the code 
     $code= strval(mt_rand(100000, 999999));

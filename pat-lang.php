@@ -72,7 +72,6 @@ if (count($_POST) > 0) {
         
 
         <form action="enable-pat-session.php">
-            <input name='doctorid'  type='hidden' value='$lang_id' >
             <input name="enable" type="submit" value="Activate Patient Session">
         </form>
 
