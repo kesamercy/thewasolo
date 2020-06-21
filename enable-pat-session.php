@@ -2,9 +2,7 @@
 session_start();
 include_once "access-db.php";
 
-echo "did we get here";
-
-if(isset($_POST['enable'])) {
+if(count($_POST > 0)) {
 
     echo "did we get there";
 
