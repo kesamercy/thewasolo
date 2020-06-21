@@ -11,14 +11,11 @@ if (isset($_POST['get-code'])) {
 
     if ($row = mysqli_fetch_assoc($result)) {
             header("location:patient-info.php?");
-        } else {
+        } 
+        else {
             $_SESSION['message'] = 'Incorrect session code';
 
         }
-    } else {
-        $_SESSION['message'] = 'The user does not exist';
-
-    }
 }
 ?>
 <!DOCTYPE html>
