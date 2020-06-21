@@ -67,7 +67,20 @@ if (count($_POST) > 0) {
 
     <div class="page-content">
 
-        <h1 class="page_title">  Select the Patient's langauge </h1>
+        <h1 class="page_title"> Select the Patient's langauge </h1>
+
+        <form action="enable-pat-session">
+            <input name="enable" type="submit" value="Activate Patient Session">
+        </form>
+
+        <div class="display-message">
+            <?php
+                if (isset($_SESSION['session-code'])) {
+                    echo $_SESSION['session-code'];
+                    unset($_SESSION['session-code']);
+                }
+                ?>
+        </div>
 
         <?php
 
@@ -95,6 +108,9 @@ if (count($_POST) > 0) {
                 echo "0 results";
             }
             ?>
+
+
+        
 
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
