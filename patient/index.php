@@ -2,7 +2,7 @@
 session_start();
 include_once "access-db.php";
 
-if (isset($_POST['get-code'])) {
+if (count($_POST) > 0) {
 
     $code = $_POST["code"];
     
