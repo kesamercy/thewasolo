@@ -69,7 +69,10 @@ if (count($_POST) > 0) {
 
         <h1 class="page_title"> Select the Patient's langauge </h1>
 
+        
+
         <form action="enable-pat-session.php">
+            <input name='doctorid'  type='hidden' value='$lang_id' >
             <input name="enable" type="submit" value="Activate Patient Session">
         </form>
 
