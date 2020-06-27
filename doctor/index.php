@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once "../access-db.php";
+include_once "access-db.php";
 
 if (isset($_POST['btn-login'])) {
 
@@ -73,7 +73,7 @@ if (isset($_POST['btn-login'])) {
         <div id="left">
             <div class="slogan">
                 <br><br>
-                <img width="600" height="600" src="Free_Presciption_Pad_Vector/Free Presciption Pad Vector.svg" alt="">
+                <img width="600" height="600" src="Free Presciption Pad Vector.svg" alt="">
 
 
             </div>

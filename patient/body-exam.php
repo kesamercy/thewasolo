@@ -35,7 +35,7 @@ if (count($_POST) > 0) {
 
     <!-- Stylesheet Docs -->
     <link rel="stylesheet" type="text/css" href="../style.css" />
-    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
     <!-- Javascript Docs -->
