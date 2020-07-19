@@ -22,3 +22,101 @@ html * {
 .content {
     max-width: 1800px;
 }
+
+
+/* nav bar sytles for mobile and desktop */
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+ul.topnav li {
+    float: left;
+}
+
+ul.topnav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:visited {
+    background-color: var(--grape);
+    text-decoration: underline;
+}
+
+ul.topnav li.right {
+    float: right;
+}
+
+.logo {
+    font-weight: bold;
+}
+
+
+/* mobile navigation styling */
+
+.mobile-nav {
+    display: none;
+}
+
+.sidepanel {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 270px;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    display: none;
+}
+
+.sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: medium;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidepanel a:hover {
+    color: #f1f1f1;
+}
+
+.sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    font-size: 36px;
+}
+
+.openbtn {
+    font-size: medium;
+    cursor: pointer;
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    background: transparent;
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
+
+/* footer design */
+
+footer {
+    padding: 10px;
+    height: 10vh;
+    color: gray;
+    font-size: 12px;
+}
