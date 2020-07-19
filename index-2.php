@@ -73,7 +73,7 @@ if (isset($_POST['btn-login'])) {
                                 <h2>Login</h2>
                                 <p>Please login as a doctor to start an interview with your patient</p>
 
-                                <form class="form-inline w3-padding-32" action="/action_page.php">
+                                <form class="form-inline w3-padding-32" action="">
                                     <label for="email">Email:</label>
                                     <input type="email" id="email" placeholder="Enter email" name="email">
                                     <label for="pwd">Password:</label>
