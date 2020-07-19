@@ -91,7 +91,7 @@ if (isset($_POST['btn-login'])) {
                                 <label for="email">Email:</label>
                                 <input type="email" id="email" placeholder="Enter email" name="email">
                                 <label for="pwd">Password:</label>
-                                <input type="password" id="pwd" placeholder="Enter password" name="pswd">
+                                <input type="password" id="pwd" placeholder="Enter password" name="paswd">
                                 <label>
                                     <input type="checkbox" name="remember"> Remember me
                                 </label>
