@@ -21,6 +21,9 @@ html * {
 
 .content {
     max-width: 1800px;
+    margin: auto;
+    padding: 10px;
+    padding-top: 30px;
 }
 
 

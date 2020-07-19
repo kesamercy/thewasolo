@@ -29,9 +29,6 @@ echo "    <footer>
             </form>
           </div>
         </div>
-      </div>
-    </div>
-    </div>
 </div>
 </footer> ";
 ?>

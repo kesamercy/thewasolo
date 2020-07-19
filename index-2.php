@@ -17,8 +17,6 @@
     <div class="content">
         <?php include 'header.php';?>
 
-
-
         <div class="row w3-padding-64">
             <div class="w3-center w3-padding-32 w3-half">
                 <img class="welcome-img" src="doctor-patient.png" alt="">
