@@ -1,4 +1,32 @@
 <?php
+session_start();
+include_once "access-db.php";
+
+if (isset($_POST['btn-login'])) {
+
+    $email = $_POST["email"];
+    $paswd = $_POST["paswd"];
+
+    $query = "SELECT * FROM translator_doctors WHERE email='$email'";
+    $result = mysqli_query($conn, $query);
+
+    if ($row = mysqli_fetch_assoc($result)) {
+        $db_password = $row['password'];
+
+        if ($paswd == $db_password) {
+            $idnum = $row['id'];
+            $_SESSION["user_id"] = $idnum;
+
+            header("location:pat-lang.php?user_id=" . $idnum);
+        } else {
+            $_SESSION['message'] = 'Incorrect password';
+
+        }
+    } else {
+        $_SESSION['message'] = 'The user does not exist';
+
+    }
+}
 
 ?>
 
@@ -36,7 +64,32 @@
                         a patient doctor interview.</p>
 
 
-                    <a href="doctorLanguage.html" class="w3-button w3-orange">Start Doctor-Patient Interview</a>
+                    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-orange">Start Doctor-Patient Interview</button>
+
+                    <div id="id01" class="w3-modal">
+                        <div class="w3-modal-content">
+                            <div class="w3-container">
+                                <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                                <h2>Login</h2>
+                                <p>Please login as a doctor to start an interview with your patient</p>
+
+                                <form class="form-inline w3-padding-32" action="/action_page.php">
+                                    <label for="email">Email:</label>
+                                    <input type="email" id="email" placeholder="Enter email" name="email">
+                                    <label for="pwd">Password:</label>
+                                    <input type="password" id="pwd" placeholder="Enter password" name="pswd">
+                                    <label>
+                                      <input type="checkbox" name="remember"> Remember me
+                                    </label>
+
+                                    <input type="submit" name="btn-login" class="w3-button w3-orange" value="Submit">
+
+                                </form>
+                                <br><br>
+
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
 
