@@ -1,59 +1,60 @@
 :root {
-  --teal: #008080;
-  --dark-blue: #2f4454;
-  --silverblack: #303133;
-  --yellowcolor: #faaf42;
-  --displaymessagecolor: #ff726f;
+    --teal: #008080;
+    --dark-blue: #2f4454;
+    --silverblack: #303133;
+    --yellowcolor: #faaf42;
+    --displaymessagecolor: #ff726f;
 }
 
-html *
-{
+html * {
     font-family: 'Roboto', sans-serif;
 }
 
 body {
-  background-color: var(--dark-blue);
-  color: white;
-  /* font-family: "Playfair Display", serif; */
-  /* padding: 20px; */
+    background-color: var(--dark-blue);
+    color: white;
+    /* font-family: "Playfair Display", serif; */
+    /* padding: 20px; */
 }
 
 .logo a {
-  font-family: "Righteous", cursive;
-  text-decoration: none;
+    font-family: "Righteous", cursive;
+    text-decoration: none;
 }
 
 .header {
-  padding: 50px;
+    padding: 50px;
 }
 
 .menu_welcomePage {
-  font-family: "Alatsi", sans-serif;
-  float: right;
+    font-family: "Alatsi", sans-serif;
+    float: right;
 }
 
 ul li {
-  display: inline;
-  padding: 50px;
+    display: inline;
+    padding: 50px;
 }
 
 ul li a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 ul li a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
+
 /* styling for the welcome page */
+
 .start-interview-btn {
-  color: white;
-  padding: 14px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  background-color: rgba(0, 0, 0, 0.3);
-  width: 400px;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 400px;
 }
 
 .route-btn {
@@ -63,16 +64,13 @@ ul li a:hover {
     text-decoration: none;
     display: inline-block;
     background-color: rgba(0, 0, 0, 0.3);
-    width: 200px; 
+    width: 200px;
 }
 
 .banner-welcome #right,
 .banner-welcome #left {
-  width: 50%;
-  text-align: center;
-}
-
-.banner-welcome #right {
+    width: 50%;
+    text-align: center;
 }
 
 .banner-title {
@@ -80,7 +78,8 @@ ul li a:hover {
     margin-left: 150px;
 }
 
-.banner-title h1, .modal-content h1 {
+.banner-title h1,
+.modal-content h1 {
     width: 80%;
     font-size: 20px;
     letter-spacing: 4px;
@@ -92,140 +91,162 @@ ul li a:hover {
 }
 
 .page-content {
-  padding: 100px;
-  text-align: center;
+    padding: 100px;
+    text-align: center;
 }
 
 .language-table {
-  display: inline-block;
+    display: inline-block;
 }
 
+
 /* styling for the split page for welcome page*/
+
 #content {
-  display: flex;
+    display: flex;
 }
 
 #left,
 #right {
-  flex-grow: 1;
+    flex-grow: 1;
 }
 
 .slogan {
-  color: black;
-  margin-left: 20px;
+    color: black;
+    margin-left: 20px;
 }
 
 .page_title {
-  text-align: center;
-  color: var(--yellowcolor);
+    text-align: center;
+    color: var(--yellowcolor);
 }
 
-
 input[type="text"] {
-  background: transparent;
-  border: none;
-  border-bottom: 1px solid #000000;
-  border-color: white;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000000;
+    border-color: white;
 }
 
 input[type="submit"] {
-  background-color: black;
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-decoration: none;
-  margin: 4px 2px;
-  cursor: pointer;
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
 }
 
 input[type="file"] {
-  background-color: black;
+    background-color: black;
 }
 
-
 audio {
-  height: 15px;
-  width: 150px;
-  text-align: center;
+    height: 15px;
+    width: 150px;
+    text-align: center;
 }
 
 a {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .patientResponseFormat {
-  font-size: 11px;
+    font-size: 11px;
 }
 
 
 /* response form styling */
 
 .responseForm {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-  width: 50%;
-  margin: auto;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 50%;
+    margin: auto;
 }
+
 
 /* styling for the login modal */
+
+
 /* The Modal (background) */
+
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 300px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 300px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
 }
+
 
 /* Modal Content */
+
 .modal-content {
-  background-color:var(--dark-blue);
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 40%;
-  color: white;
+    background-color: var(--dark-blue);
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+    color: white;
 }
 
+
 /* The Close Button */
+
 .close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 }
+
 
 /* styling for the login modal */
 
 .display-message {
-  color: var(--displaymessagecolor);
-  text-align: center;
+    color: var(--displaymessagecolor);
+    text-align: center;
 }
 
 
 /* styling for the FOOTER PART */
+
+
 /* STYLES SPECIFIC TO FOOTER  */
+
 .footer {
     width: 100%;
     position: relative;
     height: auto;
     background-color: #070617;
-  }
-  .footer .col {
+}
+
+.footer .col {
     width: 190px;
     height: auto;
     float: left;
@@ -233,25 +254,28 @@ a {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     padding: 0px 20px 20px 20px;
-  }
-  .footer .col h1 {
+}
+
+.footer .col h1 {
     margin: 0;
     padding: 0;
     font-family: inherit;
     font-size: 12px;
     line-height: 17px;
     padding: 20px 0px 5px 0px;
-    color: rgba(255,255,255,0.2);
+    color: rgba(255, 255, 255, 0.2);
     font-weight: normal;
     text-transform: uppercase;
     letter-spacing: 0.250em;
-  }
-  .footer .col ul {
+}
+
+.footer .col ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-  }
-  .footer .col ul li {
+}
+
+.footer .col ul li {
     color: #999999;
     font-size: 14px;
     font-family: inherit;
@@ -261,60 +285,67 @@ a {
     transition: .2s;
     -webkit-transition: .2s;
     -moz-transition: .2s;
-  }
-  .social ul li {
+}
+
+.social ul li {
     display: inline-block;
     padding-right: 5px !important;
-  }
-  
-  .footer .col ul li:hover {
+}
+
+.footer .col ul li:hover {
     color: #ffffff;
     transition: .1s;
     -webkit-transition: .1s;
     -moz-transition: .1s;
-  }
-  .clearfix {
+}
+
+.clearfix {
     clear: both;
-  }
-  @media only screen and (min-width: 1280px) {
+}
+
+@media only screen and (min-width: 1280px) {
     .contain {
-      width: 1200px;
-      margin: 0 auto;
+        width: 1200px;
+        margin: 0 auto;
     }
-  }
-  @media only screen and (max-width: 1139px) {
+}
+
+@media only screen and (max-width: 1139px) {
     .contain .social {
-      width: 1000px;
-      display: block;
+        width: 1000px;
+        display: block;
     }
     .social h1 {
-      margin: 0px;
+        margin: 0px;
     }
-  }
-  @media only screen and (max-width: 950px) {
+}
+
+@media only screen and (max-width: 950px) {
     .footer .col {
-      width: 33%;
+        width: 33%;
     }
     .footer .col h1 {
-      font-size: 14px;
+        font-size: 14px;
     }
     .footer .col ul li {
-      font-size: 13px;
-    }
-  }
-  @media only screen and (max-width: 500px) {
-      .footer .col {
-        width: 50%;
-      }
-      .footer .col h1 {
-        font-size: 14px;
-      }
-      .footer .col ul li {
         font-size: 13px;
-      }
-  }
-  @media only screen and (max-width: 340px) {
-    .footer .col {
-      width: 100%;
     }
-  }
+}
+
+@media only screen and (max-width: 500px) {
+    .footer .col {
+        width: 50%;
+    }
+    .footer .col h1 {
+        font-size: 14px;
+    }
+    .footer .col ul li {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .footer .col {
+        width: 100%;
+    }
+}

@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once "../access-db.php";
+include_once "access-db.php";
 
 if(!isset($_SESSION["user_id"])){ //if login in session is not set
     header("location:index.php");

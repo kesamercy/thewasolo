@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once "../access-db.php";
+include_once "access-db.php";
 
 session_unset();
 session_destroy();
