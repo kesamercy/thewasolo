@@ -1,0 +1,24 @@
+:root {
+    --teal: #008080;
+    --dark-blue: #2f4454;
+    --silverblack: #303133;
+    --yellowcolor: #faaf42;
+    --displaymessagecolor: #ff726f;
+}
+
+html * {
+    font-family: 'Roboto', sans-serif;
+}
+
+.welcome-img {
+    height: 500px;
+    width: 500px;
+}
+
+.welcome-text {
+    font-size: 20px;
+}
+
+.content {
+    max-width: 1800px;
+}

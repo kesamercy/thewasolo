@@ -10,8 +10,28 @@ html * {
     font-family: 'Roboto', sans-serif;
 }
 
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lato", sans-serif
+}
+
+.w3-bar,
+h1,
+button {
+    font-family: "Montserrat", sans-serif
+}
+
+.fa-anchor,
+.fa-coffee {
+    font-size: 200px
+}
+
 body {
-    background-color: var(--dark-blue);
     color: white;
     /* font-family: "Playfair Display", serif; */
     /* padding: 20px; */
@@ -46,6 +66,10 @@ ul li a:hover {
 
 
 /* styling for the welcome page */
+
+.start-page {
+    height: 70vh;
+}
 
 .start-interview-btn {
     color: white;
