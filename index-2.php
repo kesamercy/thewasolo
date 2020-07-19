@@ -35,6 +35,8 @@
 
         </div>
 
+        <hr class="w3-padding-64">
+
         <?php include 'footer.php';?>
     </div>
 
