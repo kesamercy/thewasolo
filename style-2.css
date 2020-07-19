@@ -45,11 +45,15 @@ ul.topnav li a {
     color: black;
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none;
 }
 
 ul.topnav li a:visited {
     background-color: var(--grape);
+    text-decoration: underline;
+}
+
+ul.topnav li a:hover {
+    color: orange;
     text-decoration: underline;
 }
 
@@ -122,4 +126,8 @@ footer {
     height: 10vh;
     color: gray;
     font-size: 12px;
+}
+
+a {
+    text-decoration: none;
 }
