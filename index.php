@@ -58,7 +58,7 @@ if (isset($_POST['btn-login'])) {
 
                 <li><a href="about.php">about</a> </li>
                 <li><a href="pat-lang.php">select language</a> </li>
-                <li><a href="login.php">Login</a> </li>
+                <li><a onclick="loginmodal()">Login</a> </li>
 
             </ul>
         </div>
