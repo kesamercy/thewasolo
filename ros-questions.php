@@ -87,7 +87,9 @@ if (count($_POST) > 0) {
 
             <hr>
 
-            <p class="description-text"> The questions to ask your patient will display on the left side of the page below when you click one of the categories above. The right side will show the response of the patient when it is entered</p>
+            <p class="description-text"> The questions to ask your patient will display on the left side of the page
+                below when you click one of the categories above. The right side will show the response of the patient
+                when it is entered</p>
 
             <div class="w3-row">
                 <div class="w3-half">
@@ -138,7 +140,7 @@ if (count($_POST) > 0) {
                 </div>
                 <div class="w3-half">
                     <h4>Expect to see the patient response here: </h4>
-                <?php
+                    <?php
 
                     if (isset($_POST['record-response'])) {
                         $answer = $_POST["response"];
@@ -165,8 +167,8 @@ if (count($_POST) > 0) {
                 </div>
             </div>
 
-
         </div>
+    </div>
 
     </div>
     <?php include 'footer.php';?>
