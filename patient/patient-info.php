@@ -53,12 +53,12 @@ include_once "access-db.php";
         <div class="patient-info w3-center">
 
             <h3>Basic Patient info</h3>
-            <p class="description-text audio-info"> The audio will play / read the title for the page and the page instructions for the patient in their chosen language </p>
+            <!-- <p class="description-text audio-info"> The audio will play / read the title for the page and the page instructions for the patient in their chosen language </p>
             <audio controls>
                 <source src="horse.ogg" type="audio/ogg">
                 <source src="horse.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
-            </audio>
+            </audio> -->
             <!-- save the patient info in sessions array so that you don't have to use forms -->
             <!-- make the icons links so that they are clickable -->
             <!-- create an onclick function that stores the value for the session -->

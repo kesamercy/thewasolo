@@ -55,12 +55,12 @@ if (count($_POST) > 0) {
             <?php include '../header.php';?>
 
             <h3 class="w3-center"> Body Exam</h3>
-            <p class="description-text audio-info"> The audio will play / read the title for the page and the page instructions for the patient in their chosen language </p>
+            <!-- <p class="description-text audio-info"> The audio will play / read the title for the page and the page instructions for the patient in their chosen language </p>
             <audio controls>
                 <source src="horse.ogg" type="audio/ogg">
                 <source src="horse.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
-            </audio>
+            </audio> -->
 
 
             <p class="description-text">The thumb should indicate the patient is done entering the body parts in pain.

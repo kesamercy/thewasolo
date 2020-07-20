@@ -30,13 +30,14 @@ include_once "../access-db.php";
 
 
         <?php include '../header.php';?>
-        <div class="patient-responses">
-        <p class="description-text audio-info"> The audio will play / read the title for the page and the page instructions for the patient in their chosen language </p>
+        <div class="patient-responses w3-center">
+            <h3>Patient Response Form</h3>
+        <!-- <p class="description-text audio-info"> The audio will play / read the title for the page and the page instructions for the patient in their chosen language </p>
             <audio controls>
                 <source src="horse.ogg" type="audio/ogg">
                 <source src="horse.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
-            </audio>
+            </audio> -->
 
             <p class="description-text"> Please select the response using the input fields below to the question asked.  </p>
 
