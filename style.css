@@ -222,5 +222,6 @@ table {
 }
 
 .complete-btn {
+    text-align: center;
     display: inherit;
 }
