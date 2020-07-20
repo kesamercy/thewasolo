@@ -203,3 +203,10 @@ table {
 .questions_container {
     height: 70vh;
 }
+
+
+/* patient session index page */
+
+input[class="session-input"] {
+    width: 50%;
+}

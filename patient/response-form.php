@@ -20,35 +20,19 @@ include_once "../access-db.php";
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
-    
+
     <title> Patient Response Form</title>
 </head>
 
-<body class="language_container">
+<body>
+    <div class="content">
 
-    <div class="header">
 
-        <div class="menu_welcomePage">
-            <ul>
 
-                <li><a href="update-db.php">update questions</a> </li>
-                <li>
-                    <a href="./index.php">welcome page</a> </li>
-                <li> <a href="./index.php">about</a> </li>
-                </li>
+        <?php include 'header.php';?>
+        <div class="mainQuestion_category">
 
-            </ul>
-        </div>
-
-        <div class="logo">
-            <h2 class="logo"> <a href="./index.html">e.translate</a> </h2>
-        </div>
-
-    </div>
-
-    <div class="mainQuestion_category">
-
-        <?php
+            <?php
 
         if (isset($_POST['response'])) {
 
@@ -81,18 +65,12 @@ include_once "../access-db.php";
 
         ?>
 
-<a class="route-btn body-exam-route-btn" href="response-form.php"> <i class="fa fa-thumbs-o-up fa-5x" aria-hidden="true"></i></a>
+
+        </div>
 
     </div>
+    <?php include 'footer.php';?>
 
-
-    
-
-
-
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/index.js"></script>
     <script>
     $(document).ready(function() {

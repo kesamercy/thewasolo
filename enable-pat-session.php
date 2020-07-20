@@ -4,8 +4,6 @@ include_once "access-db.php";
 
 if(count($_POST > 0)) {
 
-    echo "did we get there";
-
     // geenerate the code 
     $code= strval(mt_rand(100000, 999999));
 

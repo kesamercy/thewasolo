@@ -54,6 +54,7 @@ if (count($_POST) > 0) {
 
                 <h3>Select the Body Category for the Questions to Ask the Patient </h3>
 
+                <!-- IMPROTANT : ADD A CATEGORY FOR BASIC QUESTIONS -->
                 <p class="description-text"> The first line of buttons will display questions in the body category based
                     on the ROS form. Please select the button category based on the questions you would like to ask your
                     patient.</p>
@@ -91,6 +92,7 @@ if (count($_POST) > 0) {
                 below when you click one of the categories above. The right side will show the response of the patient
                 when it is entered</p>
 
+                
             <div class="w3-row">
                 <div class="w3-half">
                     <?php
