@@ -183,7 +183,8 @@ a {
 
 .language-page,
 .patient-index,
-.patient-info {
+.patient-info,
+.body-page {
     height: 70vh;
 }
 
