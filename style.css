@@ -196,3 +196,10 @@ table {
     display: inline-block;
     border-spacing: 72px 0;
 }
+
+
+/* ros questions  page */
+
+.questions_container {
+    height: 70vh;
+}
