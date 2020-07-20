@@ -147,7 +147,7 @@ if (count($_POST) > 0) {
                 <div class="w3-half">
                 <p class="description-text">Click the thumb when you are done entering all body parts hurting.
                     </p>
-                <a class="complete-btn" href="response-form.php"> <i class="fa fa-thumbs-o-up fa-5x"
+                <a class="complete-btn w3-hover-amber" href="response-form.php"> <i class="fa fa-thumbs-o-up fa-5x"
                     aria-hidden="true"></i></a>
 
                 </div>
