@@ -47,7 +47,7 @@ if (isset($_POST['session-btn'])) {
 
 
     <div class="content">
-    <?php include 'header.php';?>
+    <?php include '../header.php';?>
 
     <h4>Patient Session</h4>
 
@@ -62,7 +62,7 @@ if (isset($_POST['session-btn'])) {
     </form>
 
     </div>
-    <?php include 'header.php';?>
+    <?php include '../footer.php';?>
     <script></script>
 
 </body>
