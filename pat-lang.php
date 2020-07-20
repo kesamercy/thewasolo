@@ -39,23 +39,7 @@ if (count($_POST) > 0) {
 
 <body class="language_container">
 
-    <div class="header">
-
-        <div class="menu_welcomePage">
-            <ul>
-
-                <li><a href="update-db.php">update questions</a> </li>
-                <li><a href="index.php">home</a> </li>
-                <li><a href="logout.php">Logout</a> </li>
-
-            </ul>
-        </div>
-
-        <div class="logo">
-            <h2 class="logo"> <a href="./index.html">e.translate</a> </h2>
-        </div>
-
-    </div>
+<?php include 'header.php';?>
 
 
     <!-- populate the form with a list of languages from the db -->
@@ -112,7 +96,8 @@ if (count($_POST) > 0) {
             ?>
 
 
-        
+<?php include 'footer.php';?>
+ 
 
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
