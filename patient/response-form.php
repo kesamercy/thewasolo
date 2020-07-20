@@ -15,11 +15,12 @@ include_once "../access-db.php";
     <title>The Wasolo</title>
     <link rel="stylesheet" type="text/css" href="css/demo.css" />
     <link rel="stylesheet" type="text/css" href="../style.css" />
-    <script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
 
     <title> Patient Response Form</title>
 </head>
@@ -32,14 +33,19 @@ include_once "../access-db.php";
         <?php include '../header.php';?>
         <div class="patient-responses w3-center">
             <h3>Patient Response Form</h3>
-        <!-- <p class="description-text audio-info"> The audio will play / read the title for the page and the page instructions for the patient in their chosen language </p>
+
+
+            <!-- <p class="description-text audio-info"> The audio will play / read the title for the page and the page instructions for the patient in their chosen language </p>
             <audio controls>
                 <source src="horse.ogg" type="audio/ogg">
                 <source src="horse.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio> -->
 
-            <p class="description-text"> Please select the response using the input fields below to the question asked.  </p>
+            <p class="description-text"> Please select the response using the input fields below to the question asked.
+            </p>
+
+            <p>If this page is empty, then the doctor has not asked any questions yet...</p>
 
             <?php
 
