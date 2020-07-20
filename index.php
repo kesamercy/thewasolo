@@ -27,246 +27,110 @@ if (isset($_POST['btn-login'])) {
 
     }
 }
+
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
+<title>The Wasolo</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css" />
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>The Wasolo</title>
-    <!-- <link rel="stylesheet" type="text/css" href="css/demo.css" />
-     -->
-    <script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Alatsi|Anton|Righteous&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Shadows+Into+Light" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;800;900&display=swap"
-        rel="stylesheet">
+<body>
 
-    <title>Welcome</title>
-</head>
+    <div class="content">
+        <ul class='topnav'>
+            <li><a class='logo' href='home.php'>E-translate</a></li>
 
-<body class="main_container">
 
-    <div class="header">
+            <li class='right'><a href='about.php'>Doctor Login</a></li>
+            <li class='right'><a href='about.php'>About</a></li>
 
-        <div class="menu_welcomePage">
-            <ul>
+        </ul>
 
-                <li><a href="about.php">about</a> </li>
-                <li><a href="pat-lang.php">select language</a> </li>
-                <li><a onclick="loginmodal()">Login</a> </li>
-
-            </ul>
-        </div>
-
-        <div class="logo">
-            <h2 class="logo"> <a href="index.html">e.translate</a> </h2>
-        </div>
-
-    </div>
-
-    <div class="banner-welcome" id="content">
-        <div id="left">
-            <div class="slogan">
-                <br><br>
-                <img width="600" height="600" src="Free Presciption Pad Vector.svg" alt="">
-
+        <div class="row w3-padding-64">
+            <div class="w3-center w3-padding-32 w3-half">
+                <img class="welcome-img" src="doctor-patient.png" alt="">
 
             </div>
-
-        </div>
-
-        <div id="right">
-            <div class="welcomepage-card">
-                <br><br><br><br><br><br>
-
+            <div class="w3-center w3-padding-32 w3-half">
                 <img height="100" width="100" src="patient-doctor.svg" alt="">
-                <br><br>
-                <h2>THE MEDICAL TRANSLATOR</h2>
-                <div class="banner-title">
-                    <h1> At e.translate, we are Committed to Helping you Understand your Patient's Needs.
-                        The medical translation tool helps doctors and patients who speak
-                        different languages to communicate through the translation capabilites
-                        afforded throguh the application.
-                    </h1>
-                </div>
+                <h2>The Medical Translator</h2>
+                <p class="welcome-text">E translator enables docotrs and patients who speak different languages to
+                    communicate. We have transalted the Review of Systems forms into various African languages to enable
+                    doctors understand their patients immediate needs during
+                    a patient doctor interview.</p>
 
-                <br><br><br>
-                <a id="myBtn" onclick="loginmodal()" class="start-interview-btn"> Start Interview</a>
 
-                <!-- The Modal -->
-                <div id="myModal" class="modal">
+                <button onclick="document.getElementById('id01').style.display='block'"
+                    class="w3-button w3-orange">Start Doctor-Patient Interview</button>
 
-                    <!-- Modal content -->
-                    <div class="modal-content">
-                        <span class="close">&times;</span>
-
-                        <h1>LOGIN</h1>
-                        <br><br>
-                        <div class="display-message">
-                            <?php
+                <div id="id01" class="w3-modal">
+                    <div class="w3-modal-content">
+                        <div class="w3-container">
+                            <span onclick="document.getElementById('id01').style.display='none'"
+                                class="w3-button w3-display-topright">&times;</span>
+                            <h2>Login</h2>
+                            <p>Please login as a doctor to start an interview with your patient</p>
+                            <div class="display-message">
+                                <?php
                               if (isset($_SESSION['message'])) {
                                   echo $_SESSION['message'];
                                   unset($_SESSION['message']);
                               }
                               ?>
-                        </div>
-                        <div id="frm">
-                            <form method='POST' action="">
+                            </div>
 
-                                <input type="text" class="login_input" id="email" name="email" placeholder="Enter Email"
-                                    required>
-                                <br><br>
-                                <input type="text" class="login_input" id="paswd" name="paswd"
-                                    placeholder="Enter Password" required>
+                            <form method="POST" class="form-inline w3-padding-32" action="">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" placeholder="Enter email" name="email">
+                                <label for="pwd">Password:</label>
+                                <input type="password" id="pwd" placeholder="Enter password" name="paswd">
+                                <label>
+                                    <input type="checkbox" name="remember"> Remember me
+                                </label>
 
-                                <br><br>
-                                <div class="button">
-                                    <div class="button__text"><input class="submit-button" id="btn" type="submit"
-                                            value="Login" name="btn-login"></input></div>
-
-                                    <div class="button__wrapper">
-                                        <div class="button__arrow"></div>
-                                        <div class="button__border-circle"></div>
-                                        <div class="button__mask-circle">
-                                            <div class="button__small-circle"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <br>
-                                <br>
-                                <br>
-
-                                <a href="user-forgot.php" id="forgot_link_id"> forgot password? </a>
-                                <br>
-                                <br>
+                                <input type="submit" name="btn-login" class="w3-button w3-orange" value="Submit">
 
                             </form>
+                            <br><br>
+
                         </div>
                     </div>
-
                 </div>
 
             </div>
 
         </div>
+
+        <footer>
+
+            <div class='w3-row'>
+                <hr>
+                <div class='w3-third w3-center'>
+                    <p>
+                        Powered by <a href='https://www.w3schools.com/w3css/default.asp' target='_blank'>wandika</a>
+                    </p>
+                </div>
+                <div class='w3-third w3-center'>
+                    <p class='w3-center'> Copy right 2020</p>
+                    <div class='sharethis-inline-follow-buttons follow-buttons'></div>
+                </div>
+                <div class='w3-third w3-center'>
+                    <p>Contact Us</p>
+
+                </div>
+            </div>
+        </footer>
     </div>
-    <br><br><br><br><br><br>
 
-
-    <div class="footer">
-        <a href="https://www.vecteezy.com/free-vector/doctor">Doctor Vectors by Vecteezy</a>
-        <a href="https://www.vecteezy.com/free-vector/medical-infographics">Medical Infographics Vectors by Vecteezy</a>
-        Icons made by <a href="https://www.flaticon.com/free-icon/information_2764540" title="monkik">monkik</a> from <a
-            href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
-        <a href="https://vectorified.com/medical-background-vector">Medical Background Vector</a>
-    </div>
-
-
-    <!-- FOOTER START -->
-    <div class="footer">
-        <div class="contain">
-            <div class="col">
-                <h1>Company</h1>
-                <ul>
-                    <li>About</li>
-                    <li>Mission</li>
-                    <li>Services</li>
-                    <li>Social</li>
-                    <li>Get in touch</li>
-                </ul>
-            </div>
-            <div class="col">
-                <h1>Products</h1>
-                <ul>
-                    <li>About</li>
-                    <li>Mission</li>
-                    <li>Services</li>
-                    <li>Social</li>
-                    <li>Get in touch</li>
-                </ul>
-            </div>
-            <div class="col">
-                <h1>Accounts</h1>
-                <ul>
-                    <li>About</li>
-                    <li>Mission</li>
-                    <li>Services</li>
-                    <li>Social</li>
-                    <li>Get in touch</li>
-                </ul>
-            </div>
-            <div class="col">
-                <h1>Resources</h1>
-                <ul>
-                    <li>Webmail</li>
-                    <li>Redeem code</li>
-                    <li>WHOIS lookup</li>
-                    <li>Site map</li>
-                    <li>Web templates</li>
-                    <li>Email templates</li>
-                </ul>
-            </div>
-            <div class="col">
-                <h1>Support</h1>
-                <ul>
-                    <li>Contact us</li>
-                    <li>Web chat</li>
-                    <li>Open ticket</li>
-                </ul>
-            </div>
-            <div class="col social">
-                <h1>Social</h1>
-                <ul>
-                    <li><img src="https://svgshare.com/i/5fq.svg" width="32" style="width: 32px;"></li>
-                    <li><img src="https://svgshare.com/i/5eA.svg" width="32" style="width: 32px;"></li>
-                    <li><img src="https://svgshare.com/i/5f_.svg" width="32" style="width: 32px;"></li>
-                </ul>
-            </div>
-            <div class="clearfix"> </div>
-        </div>
-    </div>
-    <!-- END OF FOOTER -->
-
-
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="index.js"></script>
     <script>
-    function loginmodal() {
-
-        // Get the modal
-        var modal = document.getElementById("myModal");
-
-        // Get the button that opens the modal
-        var btn = document.getElementById("myBtn");
-
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-
-        // When the user clicks the button, open the modal
-        btn.onclick = function() {
-            modal.style.display = "block";
-        }
-
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-            modal.style.display = "none";
-        }
-
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-
-    }
     </script>
 
 </body>

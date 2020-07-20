@@ -102,7 +102,7 @@ if (count($_POST) > 0) {
                             // output data of each row
                             while ($row = mysqli_fetch_array($result)) {
 
-                                echo "<form method='post' action='response-form.php'>";
+                                echo "<form method='post' action='patient/response-form.php'>";
 
                                 $qtn_id = $row["question_id"];
                                 $id = $row["id"];
