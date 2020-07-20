@@ -181,7 +181,9 @@ a {
 
 /* the lanugage page styling  */
 
-.language-page {
+.language-page,
+.patient-index,
+.patient-info {
     height: 70vh;
 }
 
@@ -206,7 +208,3 @@ table {
 
 
 /* patient session index page */
-
-.patient-index {
-    height: 70vh;
-}

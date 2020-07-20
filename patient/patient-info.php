@@ -53,23 +53,25 @@ include_once "access-db.php";
         <div class="patient-info w3-center">
 
             <h3>Basic Patient info</h3>
+            <!-- save the patient info in sessions array so that you don't have to use forms -->
+            <!-- make the icons links so that they are clickable -->
+            <!-- create an onclick function that stores the value for the session -->
 
-            <p class="description-text">When this page loads, the patient will hear questions in their language asking for basic information </p>
-            <form class="w3-container w3-card-4 w3-light-grey">
-                <h2>Qtn: Are you male / female ?</h2>
+            <p class="description-text">When this page loads, the patient will hear questions in their language asking for basic personal information. The doctor will be notified everytime a patient enters a response </p>
 
-                <input type="text"> <i class="fa fa-female" aria-hidden="true"></i> </input>
-            
-                <p><label>First Name</label>
-                    <input class="w3-input w3-border" name="first" type="text"></p>
+            <form class="w3-container w3-padding-64 w3-card-4 w3-light-grey">
+                <h4>Qtn: Are you male / female ?</h4>
 
-                <p><label>Last Name</label>
-                    <input class="w3-input w3-border" name="last" type="text"></p>
+                <a href=""><i class="fa fa-female fa-5x" aria-hidden="true"></i> </a>
 
-                    <p>Note: these questions should be replaced with icons / pictures  as buttons for the patients to click as answers to the questions they hear</p>
+                <a href=""><i class="fa fa-male fa-5x" aria-hidden="true"></i> </a>
+
+
             </form>
 
-            <a class="w3-button w3-amber" href="body-exam.php"> Next </a>
+            <a class="w3-button w3-amber" href="body-exam.php"> Start Body Exam </a>
+
+            
 
 
         </div>

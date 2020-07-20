@@ -53,8 +53,6 @@ if (isset($_POST['session-btn'])) {
 
         <div class="w3-center patient-index">
 
-        <h1 class="w3-center">Patient Portal for Medical Translator</h1>
-
 
             <div class="row w3-padding-64">
                 <div class="w3-center w3-padding-32 w3-half">
@@ -63,7 +61,7 @@ if (isset($_POST['session-btn'])) {
                 </div>
                 <div class="w3-center w3-padding-64 w3-half">
                 <img height="100" width="100" src="patient-doctor.svg" alt="">
-                    <h3>Activate Patient Session</h3>
+                    <h2>Activate Patient Session</h2>
 
                     <p class="description-text">
                         Enter your <strong > doctor email and the session code </strong> retrived from the doctor session. This will allow your paitent to join
