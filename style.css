@@ -191,3 +191,8 @@ a {
     font-size: 16px;
     font-weight: 300;
 }
+
+table {
+    display: inline-block;
+    border-spacing: 72px 0;
+}

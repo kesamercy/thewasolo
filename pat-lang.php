@@ -69,7 +69,7 @@ if (count($_POST) > 0) {
                 ?>
             </div>
 
-            <p class="description-text"> When the patient session is active, please select the language that your patient understands. This is the language your patient will hear the questions you ask when the interview begins.</p>
+            <p class="description-text"> When the patient session is active, <strong> select the language </strong> that your patient understands. This is the language your patient will hear the questions you ask when the interview begins.</p>
 
 
 
@@ -89,7 +89,7 @@ if (count($_POST) > 0) {
                                     <td>" . $lang_type . "</td>
 
                                     <input name='lang_id'  type='hidden' value='$lang_id' >
-                                    <td> <input type='submit' value='select'></td>
+                                    <td> <input type='submit' class='w3-button w3-amber' value='select'></td>
                                 </tr>";
                     echo "</form>";
                 }
