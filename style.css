@@ -184,7 +184,7 @@ a {
 .language-page,
 .patient-index,
 .patient-info,
-.body-page {
+.patient-responses {
     height: 70vh;
 }
 
@@ -193,6 +193,10 @@ a {
     display: inline-block;
     font-size: 16px;
     font-weight: 300;
+}
+
+.audio-info {
+    font-size: 10px;
 }
 
 table {
@@ -209,3 +213,14 @@ table {
 
 
 /* patient session index page */
+
+
+/* body exam page  */
+
+.body-page {
+    height: 80vh;
+}
+
+.complete-btn {
+    display: inherit;
+}
