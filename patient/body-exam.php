@@ -26,29 +26,31 @@ if (count($_POST) > 0) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
+<title>The Wasolo</title>
+<meta charset="UTF-8">
+<!-- Meta Tags -->
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Stylesheet Docs -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+    rel="stylesheet">
 
-<head>
 
-    <!-- Meta Tags -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" type="text/css" href="../style.css" />
+<link rel="stylesheet" href="index.css">
 
-    <!-- Stylesheet Docs -->
-    <link rel="stylesheet" type="text/css" href="../style.css" />
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-
-    <!-- Javascript Docs -->
-    <script type="text/javascript" src="../index.js"></script>
-
-</head>
+<!-- Javascript Docs -->
+<script type="text/javascript" src="../index.js"></script>
 
 <body>
     <div class="content">
 
         <?php include '../header.php';?>
 
-        <h1 class="page_title">Select the body part where you feel pain</h1>
+        <h3> Body Exam</h3>
 
         <!-- Human Body //-->
         <div class="human-body">
@@ -125,22 +127,6 @@ if (count($_POST) > 0) {
             Area: <span id="data"></span>
         </div>
         <!--// Data Showing -->
-
-        <?php
-
-            echo "empty for now";
-
-            setcookie('pain_point', 'selection', (time() + (3600*2)), '/');
-
-
-            if(isset($_COOKIE['pain_point'])) {
-            
-                echo $_COOKIE['pain_point'];
-
-            } 
-
-            ?>
-        <br><br><br>
 
 
         <a class="w3-button w3-amber" href="response-form.php"> <i class="fa fa-thumbs-o-up fa-5x"

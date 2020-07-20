@@ -57,7 +57,7 @@ include_once "access-db.php";
             <!-- make the icons links so that they are clickable -->
             <!-- create an onclick function that stores the value for the session -->
 
-            <p class="description-text">When this page loads, the patient will hear questions in their language asking for basic personal information. The doctor will be notified everytime a patient enters a response </p>
+            <p class="description-text">When this page loads, the patient will hear questions in their language asking for basic personal information. The doctor will be notified everytime a patient enters a response and the next question in the basic info category will be displayed on the card</p>
 
             <form class="w3-container w3-padding-64 w3-card-4 w3-light-grey">
                 <h4>Qtn: Are you male / female ?</h4>
