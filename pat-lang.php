@@ -10,9 +10,6 @@ $sql = "SELECT * FROM translator_language";
 $result = $conn->query($sql);
 
 if (count($_POST) > 0) {
-    //get the user id
-    // $user_id = $_GET['user_id'];
-
     //get the language type and save it into the session
     $_SESSION['language'] = $_POST['lang_id'];
 
@@ -39,7 +36,7 @@ if (count($_POST) > 0) {
 
 <body class="language_container">
 
-<?php include 'header.php';?>
+    <?php include 'header.php';?>
 
 
     <!-- populate the form with a list of languages from the db -->
@@ -49,26 +46,27 @@ if (count($_POST) > 0) {
 
     <!-- // you need this as a hidden feature in the form so that you can return the selected language when the form is submitted. -->
 
-    <div class="page-content">
+    <div class="content">
 
-        <h1 class="page_title"> Select the Patient's langauge </h1>
+        <div class="language-page w3-center">
 
-        
 
-        <form action="enable-pat-session.php">
-            <input name="enable" type="submit" value="Activate Patient Session">
-        </form>
+            <h1> Select the Patient's langauge </h1>
 
-        <div class="display-message">
-            <?php
+            <form action="enable-pat-session.php">
+                <input name="enable" type="submit" value="Activate Patient Session">
+            </form>
+
+            <div class="display-message">
+                <?php
                 if (isset($_SESSION['session-code'])) {
                     echo $_SESSION['session-code'];
                     unset($_SESSION['session-code']);
                 }
                 ?>
-        </div>
+            </div>
 
-        <?php
+            <?php
 
             if ($result->num_rows > 0) {
 
@@ -96,8 +94,8 @@ if (count($_POST) > 0) {
             ?>
 
 
-<?php include 'footer.php';?>
- 
+            <?php include 'footer.php';?>
+        </div>
 
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
