@@ -181,4 +181,6 @@ a {
 
 /* the lanugage page styling  */
 
-.language-page {}
+.language-page {
+    height: 70vh;
+}

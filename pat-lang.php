@@ -48,8 +48,14 @@ if (count($_POST) > 0) {
         <div class="language-page w3-center">
 
 
-            <h1> Select the Patient's langauge </h1>
+            <h2> Select the Patient's langauge </h2>
 
+            <p>Click activate patient session button to start the session for the patient. A code will display and you should give it to your paitent to enter in the patient portal of the platform so that they will join your current session for the interview.</p>
+
+            <p> When the patient session is active, please select the language that your patient understands. This is the language your patient will here the questions you ask when the interview begins.</p>
+
+
+            
             <form action="enable-pat-session.php">
                 <input name="enable" type="submit" value="Activate Patient Session">
             </form>
