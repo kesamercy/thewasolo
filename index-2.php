@@ -87,7 +87,7 @@ if (isset($_POST['btn-login'])) {
                               ?>
                             </div>
 
-                            <form class="form-inline w3-padding-32" action="">
+                            <form method="POST" class="form-inline w3-padding-32" action="">
                                 <label for="email">Email:</label>
                                 <input type="email" id="email" placeholder="Enter email" name="email">
                                 <label for="pwd">Password:</label>
