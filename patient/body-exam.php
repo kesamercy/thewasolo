@@ -46,9 +46,7 @@ if (count($_POST) > 0) {
 <body>
     <div class="content">
 
-
-
-        <?php include 'header.php';?>
+        <?php include '../header.php';?>
 
         <h1 class="page_title">Select the body part where you feel pain</h1>
 
@@ -130,25 +128,25 @@ if (count($_POST) > 0) {
 
         <?php
 
-    echo "empty for now";
+            echo "empty for now";
 
-    setcookie('pain_point', 'selection', (time() + (3600*2)), '/');
+            setcookie('pain_point', 'selection', (time() + (3600*2)), '/');
 
 
-    if(isset($_COOKIE['pain_point'])) {
-    
-        echo $_COOKIE['pain_point'];
+            if(isset($_COOKIE['pain_point'])) {
+            
+                echo $_COOKIE['pain_point'];
 
-    } 
+            } 
 
-    ?>
+            ?>
         <br><br><br>
 
 
         <a class="w3-button w3-amber" href="response-form.php"> <i class="fa fa-thumbs-o-up fa-5x"
                 aria-hidden="true"></i></a>
     </div>
-    <?php include 'footer.php';?>
+    <?php include '../footer.php';?>
 </body>
 
 </html>

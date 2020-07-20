@@ -29,7 +29,7 @@ include_once "../access-db.php";
 
 
 
-        <?php include 'header.php';?>
+        <?php include '../header.php';?>
         <div class="mainQuestion_category">
 
             <?php
@@ -69,7 +69,7 @@ include_once "../access-db.php";
         </div>
 
     </div>
-    <?php include 'footer.php';?>
+    <?php include '../footer.php';?>
 
     <script src="js/index.js"></script>
     <script>
