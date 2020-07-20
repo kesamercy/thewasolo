@@ -10,366 +10,167 @@ html * {
     font-family: 'Roboto', sans-serif;
 }
 
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: "Lato", sans-serif
+.welcome-img {
+    height: 500px;
+    width: 500px;
 }
 
-.w3-bar,
-h1,
-button {
-    font-family: "Montserrat", sans-serif
-}
-
-.fa-anchor,
-.fa-coffee {
-    font-size: 200px
-}
-
-body {
-    color: white;
-    /* font-family: "Playfair Display", serif; */
-    /* padding: 20px; */
-}
-
-.logo a {
-    font-family: "Righteous", cursive;
-    text-decoration: none;
-}
-
-.header {
-    padding: 50px;
-}
-
-.menu_welcomePage {
-    font-family: "Alatsi", sans-serif;
-    float: right;
-}
-
-ul li {
-    display: inline;
-    padding: 50px;
-}
-
-ul li a {
-    text-decoration: none;
-}
-
-ul li a:hover {
-    text-decoration: underline;
-}
-
-
-/* styling for the welcome page */
-
-.start-page {
-    height: 70vh;
-}
-
-.start-interview-btn {
-    color: white;
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    background-color: rgba(0, 0, 0, 0.3);
-    width: 400px;
-}
-
-.route-btn {
-    color: white;
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    background-color: rgba(0, 0, 0, 0.3);
-    width: 200px;
-}
-
-.banner-welcome #right,
-.banner-welcome #left {
-    width: 50%;
-    text-align: center;
-}
-
-.banner-title {
-    display: inline-block;
-    margin-left: 150px;
-}
-
-.banner-title h1,
-.modal-content h1 {
-    width: 80%;
+.welcome-text {
     font-size: 20px;
-    letter-spacing: 4px;
-    color: var(--yellowcolor);
 }
 
-.welcomepage-card h2 {
-    letter-spacing: 5px;
-}
-
-.page-content {
-    padding: 100px;
-    text-align: center;
-}
-
-.language-table {
-    display: inline-block;
-}
-
-
-/* styling for the split page for welcome page*/
-
-#content {
-    display: flex;
-}
-
-#left,
-#right {
-    flex-grow: 1;
-}
-
-.slogan {
-    color: black;
-    margin-left: 20px;
-}
-
-.page_title {
-    text-align: center;
-    color: var(--yellowcolor);
-}
-
-input[type="text"] {
-    background: transparent;
-    border: none;
-    border-bottom: 1px solid #000000;
-    border-color: white;
-}
-
-input[type="submit"] {
-    background-color: black;
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-decoration: none;
-    margin: 4px 2px;
-    cursor: pointer;
-}
-
-input[type="file"] {
-    background-color: black;
-}
-
-audio {
-    height: 15px;
-    width: 150px;
-    text-align: center;
-}
-
-a {
-    cursor: pointer;
-}
-
-.patientResponseFormat {
-    font-size: 11px;
-}
-
-
-/* response form styling */
-
-.responseForm {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-    width: 50%;
+.content {
+    max-width: 1500px;
     margin: auto;
+    padding: 10px;
+    padding-top: 30px;
 }
 
 
-/* styling for the login modal */
+/* nav bar sytles for mobile and desktop */
 
-
-/* The Modal (background) */
-
-.modal {
-    display: none;
-    /* Hidden by default */
-    position: fixed;
-    /* Stay in place */
-    z-index: 1;
-    /* Sit on top */
-    padding-top: 300px;
-    /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%;
-    /* Full width */
-    height: 100%;
-    /* Full height */
-    overflow: auto;
-    /* Enable scroll if needed */
-    background-color: rgb(0, 0, 0);
-    /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.4);
-    /* Black w/ opacity */
-}
-
-
-/* Modal Content */
-
-.modal-content {
-    background-color: var(--dark-blue);
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 40%;
-    color: white;
-}
-
-
-/* The Close Button */
-
-.close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-
-/* styling for the login modal */
-
-.display-message {
-    color: var(--displaymessagecolor);
-    text-align: center;
-}
-
-
-/* styling for the FOOTER PART */
-
-
-/* STYLES SPECIFIC TO FOOTER  */
-
-.footer {
-    width: 100%;
-    position: relative;
-    height: auto;
-    background-color: #070617;
-}
-
-.footer .col {
-    width: 190px;
-    height: auto;
-    float: left;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    padding: 0px 20px 20px 20px;
-}
-
-.footer .col h1 {
-    margin: 0;
-    padding: 0;
-    font-family: inherit;
-    font-size: 12px;
-    line-height: 17px;
-    padding: 20px 0px 5px 0px;
-    color: rgba(255, 255, 255, 0.2);
-    font-weight: normal;
-    text-transform: uppercase;
-    letter-spacing: 0.250em;
-}
-
-.footer .col ul {
+ul.topnav {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
-.footer .col ul li {
-    color: #999999;
-    font-size: 14px;
-    font-family: inherit;
+ul.topnav li {
+    float: left;
+}
+
+ul.topnav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+ul.topnav li a:visited {
+    background-color: var(--grape);
+    text-decoration: underline;
+}
+
+ul.topnav li a:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+ul.topnav li.right {
+    float: right;
+}
+
+.logo {
     font-weight: bold;
-    padding: 5px 0px 5px 0px;
+}
+
+
+/* mobile navigation styling */
+
+.mobile-nav {
+    display: none;
+}
+
+.sidepanel {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 270px;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    display: none;
+}
+
+.sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: medium;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidepanel a:hover {
+    color: #f1f1f1;
+}
+
+.sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    font-size: 36px;
+}
+
+.openbtn {
+    font-size: medium;
     cursor: pointer;
-    transition: .2s;
-    -webkit-transition: .2s;
-    -moz-transition: .2s;
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    background: transparent;
 }
 
-.social ul li {
-    display: inline-block;
-    padding-right: 5px !important;
+.openbtn:hover {
+    background-color: #444;
 }
 
-.footer .col ul li:hover {
-    color: #ffffff;
-    transition: .1s;
-    -webkit-transition: .1s;
-    -moz-transition: .1s;
+
+/* footer design */
+
+footer {
+    padding: 10px;
+    height: 10vh;
+    color: gray;
+    font-size: 12px;
 }
 
-.clearfix {
-    clear: both;
+a {
+    text-decoration: none;
 }
 
-@media only screen and (min-width: 1280px) {
-    .contain {
-        width: 1200px;
-        margin: 0 auto;
-    }
+
+/* styling for the login form */
+
+.form-inline {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
 }
 
-@media only screen and (max-width: 1139px) {
-    .contain .social {
-        width: 1000px;
-        display: block;
-    }
-    .social h1 {
-        margin: 0px;
-    }
+.form-inline label {
+    margin: 5px 10px 5px 0;
 }
 
-@media only screen and (max-width: 950px) {
-    .footer .col {
-        width: 33%;
-    }
-    .footer .col h1 {
-        font-size: 14px;
-    }
-    .footer .col ul li {
-        font-size: 13px;
-    }
+.form-inline input {
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
 }
 
-@media only screen and (max-width: 500px) {
-    .footer .col {
-        width: 50%;
-    }
-    .footer .col h1 {
-        font-size: 14px;
-    }
-    .footer .col ul li {
-        font-size: 13px;
-    }
+.form-inline button {
+    padding: 10px 20px;
+    background-color: orange;
+    border: 1px solid #ddd;
+    color: white;
+    cursor: pointer;
 }
 
-@media only screen and (max-width: 340px) {
-    .footer .col {
-        width: 100%;
+.form-inline button:hover {
+    background-color: royalblue;
+}
+
+@media (max-width: 800px) {
+    .form-inline input {
+        margin: 10px 0;
+    }
+    .form-inline {
+        flex-direction: column;
+        align-items: stretch;
     }
 }
