@@ -97,7 +97,7 @@ if (count($_POST) > 0) {
 
                         // <!-- select all the questions for the specified language and the category -->
                         if ($result->num_rows > 0) {
-                            echo "<table class='prodcue-table'><tr style='height: 80px'><th style='text-align:left'> Id </th><th style='text-align:center'> Question </th> <th style='text-align:center'> Audio </th> </tr><br><br>";
+                            echo "<table><tr style='height: 80px'><th style='text-align:left'> Id </th><th style='text-align:center'> Question </th> <th style='text-align:center'> Audio </th> </tr><br><br>";
 
                             // output data of each row
                             while ($row = mysqli_fetch_array($result)) {
@@ -130,6 +130,8 @@ if (count($_POST) > 0) {
 
                                 }
                             }
+                            echo "</tr>";
+                        echo "</table>";
 
                         } else {
                             echo "0 results for the questions based on the language and the category";
