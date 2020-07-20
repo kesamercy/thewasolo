@@ -68,8 +68,9 @@ include_once "access-db.php";
 
 
             </form>
+            <br><br>
 
-            <a class="w3-button w3-amber w3-padding-48" href="body-exam.php"> Start Body Exam </a>
+            <a class="w3-button w3-amber" href="body-exam.php"> Start Body Exam </a>
 
             
 
