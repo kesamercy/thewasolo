@@ -89,7 +89,7 @@ if (count($_POST) > 0) {
                                     <td>" . $lang_type . "</td>
 
                                     <input name='lang_id'  type='hidden' value='$lang_id' >
-                                    <td> <input type='submit' class='w3-button w3-amber' value='select'></td>
+                                    <td> <input type='submit' class='w3-button w3-amber' value='select language'></td>
                                 </tr>";
                     echo "</form>";
                 }

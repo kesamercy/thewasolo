@@ -30,42 +30,25 @@ if (count($_POST) > 0) {
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>The Wasolo</title>
-    <link rel="stylesheet" type="text/css" href="css/demo.css" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <title>Select language</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <title>Start Interview</title>
 </head>
 
 <body class="questions_container">
 
-    <div class="header">
-
-        <div class="menu_welcomePage">
-            <ul>
-
-                <li><a href="body-exam.php">body exam</a> </li>
-                <li>
-                    <a href="index.php">welcome page</a> </li>
-                <li> <a href="logout.php">logout</a> </li>
-                </li>
-
-            </ul>
-        </div>
-
-        <div class="logo">
-            <h2 class="logo"> <a href="index.php">e.translate</a> </h2>
-        </div>
-
-    </div>
-
-    <div class="page-content">
+    <div class="content">
+        <?php include 'header.php';?>
 
         <div class="categories">
 
 
-            <h1 class="page_title">Select the Body Category for the Questions to Ask the Patient </h1>
+            <h3>Select the Body Category for the Questions to Ask the Patient </h3>
             <!-- get all the questions from the chosen category and show them-->
             <!-- you need the type as a hidden in the form so that you can return the selected category when the form is submitted.-->
             <?php
@@ -190,6 +173,7 @@ if (count($_POST) > 0) {
 
 
     </div>
+    <?php include 'footer.php';?>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/index.js"></script>
