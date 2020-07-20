@@ -184,3 +184,10 @@ a {
 .language-page {
     height: 70vh;
 }
+
+.description-text {
+    max-width: 600px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 300;
+}

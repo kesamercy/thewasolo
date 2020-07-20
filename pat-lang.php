@@ -26,11 +26,13 @@ if (count($_POST) > 0) {
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>The Wasolo</title>
-    <link rel="stylesheet" type="text/css" href="css/demo.css" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
     <script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css" />
     <title>Select language</title>
 </head>
 
@@ -50,14 +52,12 @@ if (count($_POST) > 0) {
 
             <h2> Select the Patient's langauge </h2>
 
-            <p>Click activate patient session button to start the session for the patient. A code will display and you should give it to your paitent to enter in the patient portal of the platform so that they will join your current session for the interview.</p>
+            <p class="description-text">Click <strong> activate patient session </strong> button to start the session for the patient. A code will display and you should give it to your paitent to enter in the patient portal so that they will join your current session for the interview.</p>
 
-            <p> When the patient session is active, please select the language that your patient understands. This is the language your patient will here the questions you ask when the interview begins.</p>
-
-
+           
             
             <form action="enable-pat-session.php">
-                <input name="enable" type="submit" value="Activate Patient Session">
+                <input name="enable" class="w3-button w3-red" type="submit" value="Activate Patient Session">
             </form>
 
             <div class="display-message">
@@ -69,6 +69,10 @@ if (count($_POST) > 0) {
                 ?>
             </div>
 
+            <p class="description-text"> When the patient session is active, please select the language that your patient understands. This is the language your patient will hear the questions you ask when the interview begins.</p>
+
+
+
             <?php
 
             if ($result->num_rows > 0) {
@@ -77,7 +81,7 @@ if (count($_POST) > 0) {
 
                 // output data of each row
                 while ($row = mysqli_fetch_array($result)) {
-                    echo "<form method='post' action=''>";
+                    echo "<form method='post' class='w3-center' action=''>";
                     $lang_type = $row["language_type"];
                     $lang_id = $row["id"];
 
