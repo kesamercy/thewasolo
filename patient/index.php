@@ -51,22 +51,34 @@ if (isset($_POST['session-btn'])) {
     <div class="content">
         <?php include '../header.php';?>
 
-        <div class="w3-center">
+        <div class="w3-center patient-index">
 
-            <h4>Patient Session</h4>
 
-            <p class="description-text">
-                Enter your email the code retrived from the doctor session. This will allow your paitent to join your
-                interview session.
-            </p>
+            <div class="row w3-padding-64">
+                <div class="w3-center w3-padding-32 w3-half">
+                    <img class="welcome-img" src="black-woman-sick.svg" alt="">
 
-            <form method="POST" action="">
-                <input type="text" class="w3-input w3-border session-input" name="email"
-                    placeholder="Enter doctor email"> <br>
-                <input type="text" class="w3-input w3-border session-input" name="pat-code"
-                    placeholder="Enter the session code"> <br>
-                <input type="submit" class="w3-button w3-light-green" name="session-btn" value="Start Session">
-            </form>
+                </div>
+                <div class="w3-center w3-padding-32 w3-half">
+                    <h4>Patient Session</h4>
+
+                    <p class="description-text">
+                        Enter your <strong > doctor email and the session code </strong> retrived from the doctor session. This will allow your paitent to join
+                        your
+                        interview session.
+                    </p>
+
+                    <form method="POST" action="">
+                        <input type="text" class="w3-input w3-border session-input" name="email"
+                            placeholder="Enter doctor email"> <br>
+                        <input type="text" class="w3-input w3-border session-input" name="pat-code"
+                            placeholder="Enter the session code"> <br>
+                        <input type="submit" class="w3-button w3-light-green" name="session-btn" value="Start Session">
+                    </form>
+                </div>
+            </div>
+
+
 
         </div>
     </div>

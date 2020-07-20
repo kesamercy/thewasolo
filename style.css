@@ -207,6 +207,6 @@ table {
 
 /* patient session index page */
 
-input[class="session-input"] {
-    width: 50%;
+.patient-index {
+    height: 70vh;
 }
