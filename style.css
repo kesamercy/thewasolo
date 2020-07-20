@@ -10,6 +10,16 @@ html * {
     font-family: 'Roboto', sans-serif;
 }
 
+.content {
+    max-width: 1500px;
+    margin: auto;
+    padding: 10px;
+    padding-top: 30px;
+}
+
+
+/* welcome page */
+
 .welcome-img {
     height: 500px;
     width: 500px;
@@ -17,13 +27,6 @@ html * {
 
 .welcome-text {
     font-size: 20px;
-}
-
-.content {
-    max-width: 1500px;
-    margin: auto;
-    padding: 10px;
-    padding-top: 30px;
 }
 
 

@@ -34,11 +34,7 @@ if (count($_POST) > 0) {
     <title>Select language</title>
 </head>
 
-<body class="language_container">
-
-    <?php include 'header.php';?>
-
-
+<body>
     <!-- populate the form with a list of languages from the db -->
     <!-- the user should submit the form with the lsit of languages from the db -->
     <!-- each language should be it's own form -->
@@ -47,6 +43,7 @@ if (count($_POST) > 0) {
     <!-- // you need this as a hidden feature in the form so that you can return the selected language when the form is submitted. -->
 
     <div class="content">
+    <?php include 'header.php';?>
 
         <div class="language-page w3-center">
 
@@ -93,11 +90,9 @@ if (count($_POST) > 0) {
             }
             ?>
 
-
-            <?php include 'footer.php';?>
         </div>
-
     </div>
+    <?php include 'footer.php';?>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/index.js"></script>
     <script>
