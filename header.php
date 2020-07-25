@@ -4,9 +4,9 @@ session_start();
 // when nav bar for desktop size
 echo "
     <ul class='topnav'>
-                <li><a class='logo' href='home.php'>Journey to Mental Wealth</a></li>
+                <li><a class='logo' href='home.php'>E-translate</a></li>
                
-                <li class='right'><a href='recommend.php'>Suggest an article</a></li>
+                <li class='right'><a href='recommend.php'>Patient Portal</a></li>
                 <li class='right'><a href='about.php'>About</a></li>
                 <li class='right'><a href='category-validate.php'>Categories</a></li>
                 <li class='right'><a href='category-help.php'>Home</a></li>

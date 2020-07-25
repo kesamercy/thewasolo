@@ -62,10 +62,10 @@ if (isset($_POST['btn-login'])) {
             <div class="w3-center w3-padding-32 w3-half">
                 <img height="100" width="100" src="patient-doctor.svg" alt="">
                 <h2>The Medical Translator</h2>
-                <p class="welcome-text">E translator enables docotrs and patients who speak different languages to
-                    communicate. We have transalted the Review of Systems forms into various African languages to enable
+                <p class="welcome-text">The Medical translator enables docotrs and patients who speak different languages to
+                    communicate. We have translated the Review of Systems medical form into various African languages to enable
                     doctors understand their patients immediate needs during
-                    a patient doctor interview.</p>
+                    a doctor - patient interview.</p>
 
 
                 <button onclick="document.getElementById('id01').style.display='block'"
